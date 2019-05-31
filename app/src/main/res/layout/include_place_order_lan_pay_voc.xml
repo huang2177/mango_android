@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/app_margin"
+    android:layout_marginLeft="@dimen/app_margin"
+    android:layout_marginTop="@dimen/dimen_6dp"
+    android:layout_marginBottom="@dimen/dimen_7dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_878787"
+        android:textSize="@dimen/dimen_15sp"
+        android:layout_marginRight="@dimen/dimen_12dp"
+        android:text="支持方式"/>
+
+    <CheckBox
+        android:id="@+id/cb_price_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/bg_small_checkbox_select"
+        android:textColor="@color/color_878787"
+        android:paddingBottom="@dimen/dimen_12dp"
+        android:paddingRight="@dimen/dimen_5dp"
+        android:paddingTop="@dimen/dimen_12dp"
+        android:textSize="@dimen/dimen_15sp"
+        android:text=" 余额 -- 元"/>
+
+
+    <TextView
+        android:id="@+id/tv_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:text="充值"
+        android:textColor="@color/color_008EFF"
+        android:textSize="@dimen/dimen_15sp" />
+
+
+    <CheckBox
+        android:id="@+id/cb_voucher_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/bg_small_checkbox_select"
+        android:textColor="@color/color_878787"
+        android:paddingBottom="@dimen/dimen_12dp"
+        android:paddingRight="@dimen/dimen_5dp"
+        android:paddingTop="@dimen/dimen_12dp"
+        android:layout_marginLeft="@dimen/dimen_25dp"
+        android:textSize="@dimen/dimen_15sp"
+        android:text=" 代金券 -- 张"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_height"
+        android:layout_weight="1"/>
+
+
+    <CheckBox
+        android:id="@+id/cb_ye_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_878787"
+        android:button="@drawable/bg_small_checkbox_select"
+        android:paddingBottom="@dimen/dimen_12dp"
+        android:paddingRight="@dimen/dimen_5dp"
+        android:paddingTop="@dimen/dimen_12dp"
+        android:textSize="@dimen/dimen_15sp"
+        android:text=" 持仓过夜" />
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_kline_market_layout" />
+
+    <View
+        android:id="@+id/v_content_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <com.paizhong.manggo.widget.tab.KLineCommonTabLayout
+        android:id="@+id/commonTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/v_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_marginBottom="@dimen/dimen_40dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ll_msg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:src="@mipmap/ic_eye_open" />
+
+
+            <ImageView
+                android:id="@+id/iv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:src="@mipmap/ic_msg_send" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_kline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_buy_up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_F74F54"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="买涨"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_15sp"
+            android:paddingTop="@dimen/dimen_15dp"
+            android:paddingBottom="@dimen/dimen_15dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_buy_down"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_1AC47A"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="买跌"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_15sp"
+            android:paddingTop="@dimen/dimen_15dp"
+            android:paddingBottom="@dimen/dimen_15dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_F2F2F2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="暂无持仓"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_15sp"
+            android:paddingTop="@dimen/dimen_15dp"
+            android:paddingBottom="@dimen/dimen_15dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_kline_bottom_lan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_36dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v_kline_bottom_lan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/line_color"
+                android:visibility="gone"/>
+
+            <com.paizhong.manggo.widget.tab.KLineCommonNrTabLayout
+                android:id="@+id/commonTab_lan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_buy_up_lan"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_F74F54"
+            android:gravity="center"
+            android:text="买涨"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_buy_down_lan"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_1AC47A"
+            android:gravity="center"
+            android:text="买跌"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_15sp" />
+    </LinearLayout>
+</LinearLayout>

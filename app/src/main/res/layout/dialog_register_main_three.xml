@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_register_three"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimen_20dp"
+    android:paddingRight="@dimen/dimen_20dp"
+    android:orientation="vertical"
+    android:visibility="gone">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp">
+
+        <TextView
+            android:id="@+id/tv_register_three_front"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/register_left"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:text="上一步"
+            android:textSize="@dimen/dimen_17sp"
+            android:textColor="@color/color_727272"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/register_three"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_register_three_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_19dp"
+        android:drawableRight="@mipmap/register_safe"
+        android:drawablePadding="@dimen/dimen_7dp"
+        android:text="请设置资金密码"
+        android:textStyle="bold"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dimen_26sp"/>
+
+    <TextView
+        android:id="@+id/tv_three_title_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:text="资金密码为6位数字"
+        android:textColor="@color/color_727272"
+        android:textSize="@dimen/dimen_17sp"/>
+
+    <EditText
+        android:id="@+id/et_register_three_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_50dp"
+        android:background="@null"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_BFBFBF"
+        android:textSize="@dimen/dimen_26sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@color/color_e6e6e6"/>
+
+    <TextView
+        android:id="@+id/tv_register_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:text="忘记密码"
+        android:textColor="@color/color_008EFF"
+        android:textSize="@dimen/dimen_14sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_register_three_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text=""
+        android:textColor="@color/color_F74F54"
+        android:textSize="@dimen/dimen_13sp"
+        android:visibility="gone"/>
+
+</LinearLayout>

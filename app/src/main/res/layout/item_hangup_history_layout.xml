@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_buy_text"
+            android:layout_width="@dimen/dimen_31dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_trade_buy"
+            android:paddingBottom="@dimen/dimen_2dp"
+            android:paddingTop="@dimen/dimen_2dp"
+            android:gravity="center"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_11sp"
+            android:text="--"/>
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color_333333"
+            android:textStyle="bold"
+            android:textSize="@dimen/dimen_15sp"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:text="-- "/>
+
+
+        <TextView
+            android:id="@+id/tv_product_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_15sp"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:text="--元"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_19dp"
+            android:text="挂单价"
+            android:textColor="@color/color_b2b2b2"
+            android:textSize="@dimen/dimen_13sp" />
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_hangup_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4dp"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_18sp"
+            android:text="-- ± --"/>
+
+    </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginLeft="@dimen/dimen_10dp"
+           android:layout_marginRight="@dimen/dimen_10dp"
+           android:layout_marginTop="@dimen/dimen_5dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/color_b2b2b2"
+               android:textSize="@dimen/dimen_13sp"
+               android:text="挂单时间"/>
+
+           <TextView
+               android:id="@+id/tv_hangup_time"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:layout_marginLeft="@dimen/dimen_5dp"
+               android:textSize="@dimen/dimen_13sp"
+               android:textColor="@color/color_727272"
+               android:text="--- -- -- --"/>
+
+
+            <TextView
+                android:id="@+id/tv_hangup_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_13sp"
+                android:textColor="@color/color_008EFF"
+                android:text="---"/>
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginRight="@dimen/dimen_10dp"
+           android:layout_marginLeft="@dimen/dimen_10dp"
+           android:layout_marginTop="@dimen/dimen_5dp"
+           android:gravity="center_vertical">
+
+           <TextView
+               android:id="@+id/tv_time_error_hint"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/color_b2b2b2"
+               android:textSize="@dimen/dimen_13sp"
+               android:text="建仓时间"/>
+
+
+           <TextView
+               android:id="@+id/tv_time_error"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:layout_marginLeft="@dimen/dimen_5dp"
+               android:textSize="@dimen/dimen_13sp"
+               android:textColor="@color/color_727272"
+               android:text="--- -- -- --"/>
+
+
+           <TextView
+               android:id="@+id/tv_open_price_hint"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/color_b2b2b2"
+               android:textSize="@dimen/dimen_13sp"
+               android:text="建仓价"/>
+
+
+           <com.paizhong.manggo.widget.DinTextView
+               android:id="@+id/tv_open_price"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/dimen_5dp"
+               android:textSize="@dimen/dimen_18sp"
+               android:textColor="@color/color_333333"
+               android:text="---"/>
+       </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/line_color"
+            android:layout_marginTop="@dimen/dimen_15dp"/>
+</LinearLayout>

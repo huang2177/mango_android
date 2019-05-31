@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_12dp"
+    android:orientation="horizontal">
+
+    <com.paizhong.manggo.widget.tab.SlidingTabLayout
+        android:id="@+id/commonTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:paddingBottom="@dimen/dimen_8dp"
+        app:tl_iconVisible="false"
+        app:tl_indicator_anim_duration="400"
+        app:tl_indicator_anim_enable="true"
+        app:tl_indicator_color="@color/color_FEBC18"
+        app:tl_indicator_gravity="BOTTOM"
+        app:tl_indicator_height="@dimen/dimen_4dp"
+        app:tl_indicator_style="NORMAL"
+        app:tl_indicator_width="@dimen/dimen_30dp"
+        app:tl_tab_padding="0dp"
+        app:tl_tab_sec_padding="@dimen/dimen_30dp"
+        app:tl_tab_space_equal="false"
+        app:tl_textBold="BOTH"
+        app:tl_textSelectColor="@color/color_333333"
+        app:tl_textUnselectColor="@color/color_A7A7A7"
+        app:tl_textsize="@dimen/dimen_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_E3E3E3" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/app_margin"
+    android:paddingRight="@dimen/app_margin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_code_name"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="----"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="---"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <View
+                android:id="@+id/v_green"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shansuo_green" />
+
+
+            <View
+                android:id="@+id/v_red"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shansuo_red" />
+
+        </FrameLayout>
+
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_zdf"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="+0.18%"
+            android:textSize="@dimen/dimen_18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-----"
+        android:textColor="@color/color_b2b2b2"
+        android:textSize="@dimen/dimen_12sp" />
+
+</LinearLayout>

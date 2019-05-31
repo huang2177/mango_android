@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/app_margin"
+    android:layout_marginTop="@dimen/dimen_14dp"
+    android:layout_marginBottom="@dimen/dimen_10dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="止损"
+            android:textColor="@color/color_878787"
+            android:textSize="@dimen/dimen_15sp" />
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_120dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_trade_zyzs"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_zs_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--%"
+                android:textColor="@color/color_363030"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="match_parent"
+                android:background="@color/line_color"
+                android:layout_marginLeft="@dimen/dimen_7dp"
+                android:layout_marginRight="@dimen/dimen_7dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_zs_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--元"
+                android:textColor="@color/color_363030"
+                android:textSize="@dimen/dimen_15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:orientation="vertical">
+
+             <com.paizhong.manggo.widget.VibrateSeekBar
+                 android:id="@+id/vs_zs_seekbar"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_marginLeft="2dp"
+                 android:layout_marginRight="@dimen/dimen_1dp"
+                 android:background="@color/transparent"
+                 android:max="15"
+                 android:maxHeight="@dimen/dimen_4dp"
+                 android:minHeight="@dimen/dimen_4dp"
+                 android:paddingLeft="@dimen/dimen_1dp"
+                 android:progressDrawable="@drawable/seek_bar_progress_green"
+                 android:splitTrack="false"
+                 android:thumb="@mipmap/ic_seek_bar_button"
+                 android:thumbOffset="5dp" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="@dimen/dimen_16dp"
+                       android:layout_weight="1"
+                       android:text="不限"
+                       android:textColor="@color/color_A4A5A6"
+                       android:textSize="@dimen/dimen_12sp" />
+
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="@dimen/dimen_15dp"
+                       android:text="75%"
+                       android:textColor="@color/color_A4A5A6"
+                       android:textSize="@dimen/dimen_12sp" />
+               </LinearLayout>
+         </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="止盈"
+            android:textColor="@color/color_878787"
+            android:textSize="@dimen/dimen_15sp"
+            android:layout_marginLeft="@dimen/dimen_2dp"/>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_120dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_trade_zyzs"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_zy_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/color_363030"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="match_parent"
+                android:background="@color/line_color"
+                android:layout_marginLeft="@dimen/dimen_7dp"
+                android:layout_marginRight="@dimen/dimen_7dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_zy_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--元"
+                android:textColor="@color/color_363030"
+                android:textSize="@dimen/dimen_15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+             <com.paizhong.manggo.widget.VibrateSeekBar
+                 android:id="@+id/vs_zy_seekbar"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_marginLeft="@dimen/dimen_2dp"
+                 android:layout_marginRight="@dimen/dimen_1dp"
+                 android:background="@color/transparent"
+                 android:max="40"
+                 android:maxHeight="@dimen/dimen_4dp"
+                 android:minHeight="@dimen/dimen_4dp"
+                 android:paddingLeft="@dimen/dimen_1dp"
+                 android:progressDrawable="@drawable/seek_bar_progress_red"
+                 android:splitTrack="false"
+                 android:thumb="@mipmap/ic_seek_bar_button"
+                 android:thumbOffset="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_16dp"
+                android:layout_weight="1"
+                android:text="不限"
+                android:textColor="@color/color_A4A5A6"
+                android:textSize="@dimen/dimen_12sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:text="200%"
+                android:textColor="@color/color_A4A5A6"
+                android:textSize="@dimen/dimen_12sp" />
+        </LinearLayout>
+
+         </LinearLayout>
+</LinearLayout>

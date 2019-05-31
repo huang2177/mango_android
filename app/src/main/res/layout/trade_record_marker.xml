@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/k_buy_user_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ripple_view"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/color_ffffff"
+        android:textSize="10sp"
+        tools:background="@color/color_EA4A5E"
+        tools:text="小牛在2936购买白银8千克" />
+
+    <com.paizhong.manggo.ui.kchart.views.RippleBackground
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ripple_view"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_centerVertical="true"
+        app:rb_duration="2000"
+        app:rb_radius="4dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="4"/>
+
+</RelativeLayout>

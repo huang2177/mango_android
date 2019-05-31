@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/ll_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        tools:background="@mipmap/bg_ky_voucher"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:text="￥"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_24sp" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_42sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/tv_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_ffffff"
+                android:text="@string/voucher_yx"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_ffffff"
+                android:text="----"/>
+
+        </LinearLayout>
+
+         <TextView
+             android:id="@+id/tv_btn"
+             android:layout_width="80dp"
+             android:layout_height="wrap_content"
+             android:textColor="@color/color_ffffff"
+             android:textSize="@dimen/dimen_15sp"
+             android:background="@drawable/bg_user_login_register"
+             android:paddingTop="@dimen/dimen_5dp"
+             android:paddingBottom="@dimen/dimen_5dp"
+             android:gravity="center"
+             android:layout_marginRight="@dimen/dimen_10dp"
+             android:layout_gravity="center_vertical"
+             android:text="@string/imd_use"
+             android:visibility="gone"/>
+
+
+        <FrameLayout
+            android:id="@+id/fl_gq_img"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:src="@mipmap/ic_gq_voucher"
+                android:layout_gravity="right"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

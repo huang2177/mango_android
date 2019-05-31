@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_center_cl"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_marginTop="-27dp"
+    android:layout_marginLeft="@dimen/dimen_10dp"
+    android:layout_marginRight="@dimen/dimen_10dp"
+    android:background="@mipmap/user_bg_money"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/center_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_18dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_gravity="center|left"
+        android:drawablePadding="@dimen/dimen_6dp"
+        android:drawableRight="@mipmap/user_right"
+        android:text="爱淘商城账户"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimen_18sp"
+        android:textColor="@color/color_333333" />
+
+    <View
+        android:id="@+id/center_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"
+        android:layout_marginTop="@dimen/dimen_13dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_A7A7A7"
+            android:textSize="@dimen/dimen_14sp"
+            android:layout_marginTop="@dimen/dimen_13dp"
+            android:text="账户总资产(元)"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dimen_27sp"
+                android:text="-----"/>
+
+            <TextView
+                android:id="@+id/tv_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4dp"
+                android:background="@drawable/bg_shape_r3_008eff"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_4dp"
+                android:paddingLeft="@dimen/dimen_26dp"
+                android:paddingRight="@dimen/dimen_26dp"
+                android:paddingTop="@dimen/dimen_4dp"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_15sp"
+                android:text="充值"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="持仓资产(元)"
+                    android:textColor="@color/color_A7A7A7"
+                    android:textSize="@dimen/dimen_14sp" />
+
+
+                <com.paizhong.manggo.widget.DinTextView
+                    android:id="@+id/tv_z_profit_loss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_1dp"
+                    android:textColor="@color/color_F74F54"
+                    android:textSize="@dimen/dimen_21sp"
+                    android:text="-----"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="可用余额(元)"
+                        android:textColor="@color/color_A7A7A7"
+                        android:textSize="@dimen/dimen_14sp" />
+
+
+                    <com.paizhong.manggo.widget.DinTextView
+                        android:id="@+id/tv_available_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_1dp"
+                        android:text="-----"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/dimen_21sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

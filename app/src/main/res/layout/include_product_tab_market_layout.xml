@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_product_layout"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_50dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_ni_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+            <TextView
+                android:id="@+id/tv_ni_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_323232"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="GL镍"/>
+
+
+            <TextView
+                android:id="@+id/tv_ni_xiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_10sp"
+                android:paddingLeft="@dimen/dimen_2dp"
+                android:paddingRight="@dimen/dimen_2dp"
+                android:background="@drawable/bg_rshape_gray"
+                android:textColor="@color/color_ffffff"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible"
+                android:text="休"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_ni_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_15sp"
+                android:textColor="@color/color_323232"
+                android:layout_gravity="center_vertical"
+                android:text="----"/>
+
+
+            <ImageView
+                android:id="@+id/iv_ni_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+      <View
+          android:id="@+id/v_ni_line"
+          android:layout_width="@dimen/line_height"
+          android:layout_height="match_parent"
+          android:background="@color/line_color"
+          android:layout_marginBottom="@dimen/dimen_7dp"
+          android:layout_marginTop="@dimen/dimen_12dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_cu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+            <TextView
+                android:id="@+id/tv_cu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_323232"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="GL铜"/>
+
+
+            <TextView
+                android:id="@+id/tv_cu_xiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_10sp"
+                android:paddingLeft="@dimen/dimen_2dp"
+                android:paddingRight="@dimen/dimen_2dp"
+                android:background="@drawable/bg_rshape_gray"
+                android:textColor="@color/color_ffffff"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible"
+                android:text="休"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_cu_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_15sp"
+                android:textColor="@color/color_323232"
+                android:layout_gravity="center_vertical"
+                android:text="----"/>
+
+
+            <ImageView
+                android:id="@+id/iv_cu_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_cu_line"
+        android:layout_width="@dimen/line_height"
+        android:layout_height="match_parent"
+        android:background="@color/line_color"
+        android:layout_marginBottom="@dimen/dimen_7dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_ag_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_trade_product">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+            <TextView
+                android:id="@+id/tv_ag_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_323232"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="GL银"/>
+
+
+            <TextView
+                android:id="@+id/tv_ag_xiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_10sp"
+                android:paddingLeft="@dimen/dimen_2dp"
+                android:paddingRight="@dimen/dimen_2dp"
+                android:background="@drawable/bg_rshape_gray"
+                android:textColor="@color/color_ffffff"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible"
+                android:text="休"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_ag_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_24sp"
+                android:textColor="@color/color_323232"
+                android:layout_gravity="center_vertical"
+                android:text="----"/>
+
+
+            <ImageView
+                android:id="@+id/iv_ag_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_ag_line"
+        android:layout_width="@dimen/line_height"
+        android:layout_height="match_parent"
+        android:background="@color/line_color"
+        android:layout_marginBottom="@dimen/dimen_7dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_zs_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+            <TextView
+                android:id="@+id/tv_zs_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_323232"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="GL大豆"/>
+
+
+            <TextView
+                android:id="@+id/tv_zs_xiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_10sp"
+                android:paddingLeft="@dimen/dimen_2dp"
+                android:paddingRight="@dimen/dimen_2dp"
+                android:background="@drawable/bg_rshape_gray"
+                android:textColor="@color/color_ffffff"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible"
+                android:text="休"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_zs_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_15sp"
+                android:textColor="@color/color_323232"
+                android:layout_gravity="center_vertical"
+                android:text="----"/>
+
+
+            <ImageView
+                android:id="@+id/iv_zs_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_zs_line"
+        android:layout_width="@dimen/line_height"
+        android:layout_height="match_parent"
+        android:background="@color/line_color"
+        android:layout_marginBottom="@dimen/dimen_7dp"
+        android:layout_marginTop="@dimen/dimen_12dp" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_zw_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+            <TextView
+                android:id="@+id/tv_zw_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_323232"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="GL小麦"/>
+
+
+            <TextView
+                android:id="@+id/tv_zw_xiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_10sp"
+                android:paddingLeft="@dimen/dimen_2dp"
+                android:paddingRight="@dimen/dimen_2dp"
+                android:background="@drawable/bg_rshape_gray"
+                android:textColor="@color/color_ffffff"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible"
+                android:text="休"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_zw_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_15sp"
+                android:textColor="@color/color_323232"
+                android:layout_gravity="center_vertical"
+                android:text="----"/>
+
+
+            <ImageView
+                android:id="@+id/iv_zw_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_zw_line"
+        android:layout_width="@dimen/line_height"
+        android:layout_height="match_parent"
+        android:background="@color/line_color"
+        android:layout_marginBottom="@dimen/dimen_7dp"
+        android:layout_marginTop="@dimen/dimen_12dp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_zc_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+            <TextView
+                android:id="@+id/tv_zc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_323232"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="GL玉米"/>
+
+
+            <TextView
+                android:id="@+id/tv_zc_xiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_10sp"
+                android:paddingLeft="@dimen/dimen_2dp"
+                android:paddingRight="@dimen/dimen_2dp"
+                android:background="@drawable/bg_rshape_gray"
+                android:textColor="@color/color_ffffff"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible"
+                android:text="休"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginRight="@dimen/dimen_15dp">
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_zc_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_15sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/color_323232"
+                android:text="----"/>
+
+
+            <ImageView
+                android:id="@+id/iv_zc_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

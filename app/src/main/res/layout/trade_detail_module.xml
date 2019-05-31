@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/app_margin"
+        android:orientation="horizontal">
+
+        <com.paizhong.manggo.widget.CircleImageView
+            android:id="@+id/civ_head"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@mipmap/image_analyst" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="分析师"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_b2b2b2"
+                android:textSize="@dimen/dimen_12sp"
+                tools:text="-----" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_363030"
+                android:textSize="@dimen/dimen_18sp"
+                tools:text="-----" />
+
+            <TextView
+                android:id="@+id/tv_product_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:textColor="@color/color_363030"
+                android:textSize="@dimen/dimen_18sp"
+                tools:text="-----" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_3dp"
+            android:layout_marginTop="@dimen/dimen_1_5dp"
+            android:background="@color/color_008EFF" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/app_margin"
+        android:textColor="@color/color_363030"
+        android:textSize="@dimen/dimen_16sp"
+        tools:text="-----" />
+
+
+    <TextView
+        android:id="@+id/tv_proposal_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/app_margin"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dimen_16sp"
+        tools:text="分析师建议" />
+
+
+    <TextView
+        android:id="@+id/tv_proposal_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/app_margin"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dimen_16sp"
+        tools:text="-----" />
+
+
+    <com.paizhong.manggo.widget.FlickerProgressBar
+        android:id="@+id/pb_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/app_margin"
+        android:background="@drawable/bg_trade_progress"
+        android:progress="50"
+        android:progressDrawable="@drawable/progress_position_ratio"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_buy_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/app_margin"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_buy_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_F74F54"
+            android:textSize="@dimen/dimen_14sp"
+            tools:text="买涨37%" />
+
+
+        <TextView
+            android:id="@+id/tv_buy_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_1AC47A"
+            android:textSize="@dimen/dimen_14sp"
+            tools:text="买跌37%" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_buy_state_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="截止至该策略发布时的多空比例"
+        android:textColor="@color/color_b2b2b2"
+        android:textSize="@dimen/dimen_13sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@color/color_FAFAFA" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/dimen_5dp"
+            android:layout_height="@dimen/dimen_15dp"
+            android:background="@color/color_008EFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_3dp"
+            android:text="基本面分析"
+            android:textColor="@color/color_363030"
+            android:textSize="@dimen/dimen_17sp" />
+    </LinearLayout>
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/wv_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:layout_marginBottom="@dimen/dimen_30dp"
+        android:text="以上策略仅供参考，不构成买卖依据"
+        android:textColor="@color/color_FF5500"
+        android:textSize="@dimen/dimen_13sp" />
+</LinearLayout>

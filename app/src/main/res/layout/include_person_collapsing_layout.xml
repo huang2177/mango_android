@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CollapsingToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/collapsing_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/bg_follow_yellow"
+        app:layout_collapseMode="parallax"
+        app:layout_collapseParallaxMultiplier="0.7" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        app:contentInsetStart="0dp"
+        app:layout_collapseMode="pin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.paizhong.manggo.widget.DrawableCenterTextView
+                android:id="@+id/tv_left"
+                style="?attr/toolbarNavigationButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/ic_left_arrow_white"
+                android:gravity="center"
+                android:minWidth="@dimen/title_height"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="牛人详情"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dimen_18sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_70dp"
+        android:paddingLeft="@dimen/dimen_20dp"
+        android:paddingRight="@dimen/dimen_20dp"
+        app:layout_collapseMode="parallax"
+        app:layout_collapseParallaxMultiplier="1"
+        app:layout_scrollFlags="scroll|enterAlwaysCollapsed|snap">
+
+        <TextView
+            android:id="@+id/person_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- -"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_26sp" />
+
+        <com.paizhong.manggo.widget.CircleImageView
+            android:id="@+id/person_iv"
+            android:layout_width="@dimen/dimen_64dp"
+            android:layout_height="@dimen/dimen_64dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_user_head" />
+
+
+        <TextView
+            android:id="@+id/person_tv_earnings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv"
+            android:text="0%"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_care"
+            android:text="周盈利率"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_13sp" />
+
+        <TextView
+            android:id="@+id/person_care_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv1"
+            android:layout_alignLeft="@+id/tv1"
+            android:text="0"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_care"
+            android:layout_marginLeft="@dimen/dimen_37dp"
+            android:layout_toRightOf="@+id/tv"
+            android:drawableLeft="@mipmap/bg_follow_care"
+            android:text="关注"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_care"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/person_iv"
+            android:layout_alignLeft="@+id/person_iv"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:background="@drawable/bg_follow_care_selector"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:paddingBottom="@dimen/dimen_3dp"
+            android:text="关注"
+
+            android:textColor="@color/selector_follow_care_text"
+            android:textSize="@dimen/dimen_15sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:background="@color/line_color" />
+
+</android.support.design.widget.CollapsingToolbarLayout>

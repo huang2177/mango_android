@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50dp">
+
+    <LinearLayout
+        android:id="@+id/ll_sign1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/color_6187FF"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_sign_h1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/white_60"
+            android:text="--"/>
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_sign1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_ffffff"
+            android:text="0"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_sign2"
+        android:layout_width="0dp"
+        android:layout_height="49.7dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/color_6187FF"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dimen_2dp"
+        android:layout_marginRight="@dimen/dimen_2dp">
+        <TextView
+            android:id="@+id/tv_sign_h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/white_60"
+            android:text="--"/>
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_sign2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_ffffff"
+            android:text="0"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_sign3"
+        android:layout_width="0dp"
+        android:layout_height="49.7dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/color_6187FF"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_sign_h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/white_60"
+            android:text="--"/>
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_sign3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_ffffff"
+            android:text="0"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_sign4"
+        android:layout_width="0dp"
+        android:layout_height="49.7dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/color_6187FF"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dimen_2dp"
+        android:layout_marginRight="@dimen/dimen_2dp">
+        <TextView
+            android:id="@+id/tv_sign_h4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/white_60"
+            android:text="--"/>
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_sign4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_ffffff"
+            android:text="0"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_sign5"
+        android:layout_width="0dp"
+        android:layout_height="49.7dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/color_6187FF"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_sign_h5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/white_60"
+            android:text="--"/>
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_sign5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_ffffff"
+            android:text="0"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_sign6"
+        android:layout_width="0dp"
+        android:layout_height="49.7dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/color_6187FF"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dimen_2dp"
+        android:layout_marginRight="@dimen/dimen_2dp">
+        <TextView
+            android:id="@+id/tv_sign_h6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/white_60"
+            android:text="--"/>
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_sign6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_ffffff"
+            android:text="0"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_sign7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/color_6187FF"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_sign_h7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_sign_smalbox"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_sign_h7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/white_60"
+            android:text="--"/>
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_sign7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_ffffff"
+            android:text="0"/>
+    </LinearLayout>
+</LinearLayout>

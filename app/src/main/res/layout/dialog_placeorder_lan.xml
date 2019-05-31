@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_bottom">
+
+    <include  layout="@layout/include_place_order_lan_top"/>
+
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/line_height"
+         android:background="@color/line_color"/>
+
+  <android.support.v4.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:scrollbars="none">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <include  layout="@layout/include_place_order_lan_middle"/>
+
+          <include layout="@layout/include_place_order_lan_shou_num_layout"/>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/line_height"
+              android:background="@color/line_color"
+              android:layout_marginLeft="@dimen/app_margin"
+              android:layout_marginRight="@dimen/app_margin"/>
+
+          <include layout="@layout/include_place_order_lan_zyzs"/>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/line_height"
+              android:background="@color/line_color"
+              android:layout_marginLeft="@dimen/app_margin"
+              android:layout_marginRight="@dimen/app_margin"/>
+
+           <include  layout="@layout/include_place_order_lan_pay_voc"/>
+
+
+          <View
+              android:id="@+id/v_follow"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/line_height"
+              android:background="@color/line_color"
+              android:layout_marginLeft="@dimen/app_margin"
+              android:layout_marginRight="@dimen/app_margin"
+              android:layout_marginTop="@dimen/dimen_12dp"/>
+
+          <TextView
+              android:id="@+id/tv_follow"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/app_margin"
+              android:layout_marginRight="@dimen/app_margin"
+              android:drawableRight="@drawable/bg_gy_open"
+              android:layout_marginTop="@dimen/dimen_14dp"
+              android:layout_marginBottom="@dimen/dimen_14dp"
+              android:text="@string/text14"
+              android:textColor="@color/color_878787"
+              android:textSize="@dimen/dimen_15sp" />
+      </LinearLayout>
+
+  </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55dp"
+        android:background="@color/color_F7F8F9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:text="总计"
+            android:textColor="@color/color_363030"
+            android:textSize="@dimen/dimen_12sp" />
+
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_price_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="@color/color_363030"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="@color/color_363030"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <TextView
+            android:id="@+id/tv_open_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6dp"
+            android:text="(含手续费--元)"
+            android:textColor="@color/color_828282"
+            android:textSize="@dimen/dimen_12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_market_price_change"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dimen_13dp"
+            android:paddingBottom="@dimen/dimen_2dp"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_2dp"
+            android:text="------------"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <TextView
+            android:id="@+id/tv_place_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="买跌下单"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_20sp" />
+    </LinearLayout>
+</LinearLayout>

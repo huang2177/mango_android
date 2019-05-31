@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">芒果淘金</string>
+    <string name="text_follow_recommended">最新跟买</string>
+
+    <string name="market_pzcode">品种代码</string>
+    <string name="market_newprice">最新价</string>
+    <string name="market_zdf">涨跌幅</string>
+
+    <string name="user_integral_mall">积分商城</string>
+    <string name="user_quan">代金券</string>
+    <string name="user_new">新手教程</string>
+    <string name="user_zx_kefu">在线客服</string>
+    <string name="user_about_me">关于我们</string>
+    <string name="user_about_update">版本检测</string>
+
+    <string name="head">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="phone_num">手机号</string>
+    <string name="reset_pwd_setting">重置密码</string>
+    <string name="reset_out_login">退出当前帐号</string>
+
+    <string name="text1">建仓成本</string>
+    <string name="text2">建仓点位</string>
+    <string name="text3">浮动点位</string>
+    <string name="text4">建仓手续费</string>
+    <string name="text5">建仓时间</string>
+    <string name="text6">手续费</string>
+    <string name="text7">平仓价</string>
+    <string name="text8">平仓时间</string>
+    <string name="text9">买涨</string>
+    <string name="text10">买跌</string>
+    <string name="text11">开启后展示您的跟买单</string>
+    <string name="text12">盈余金额</string>
+    <string name="text13">行情</string>
+    <string name="text14">发起跟买</string>
+    <string name="text15">元／手</string>
+    <string name="text16">数量</string>
+    <string name="text17">手</string>
+    <string name="text18">持仓过夜</string>
+    <string name="text19">建仓价</string>
+    <string name="text20">收起</string>
+    <string name="text21">详情</string>
+    <string name="text22">平仓</string>
+    <string name="text23">取消</string>
+    <string name="text24">确定</string>
+    <string name="text25">品种</string>
+    <string name="text26">最新报价</string>
+    <string name="text27">盈亏</string>
+    <string name="text28">止损</string>
+    <string name="text29">止盈</string>
+
+    <string name="verify_get">获取验证码</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="reset_pwd">密码重置</string>
+    <string name="setting_new_pwd">设置6-12位新密码</string>
+    <string name="setting_new_pwd_6">设置新交易密码</string>
+    <string name="setting_new_qren_pwd_6">重复输入上述密码</string>
+    <string name="verify_code">验证码</string>
+    <string name="qren">确认</string>
+    <string name="forget_pwd">忘记密码</string>
+
+    <string name="user_jys_login">登录资金账户</string>
+    <string name="user_jys_register">设置资金密码</string>
+    <string name="user_jys_czpwd">重置资金密码</string>
+
+    <string name="empty_no_voucher">暂无代金券</string>
+    <string name="voucher_gq">过期时间</string>
+    <string name="voucher_yx">有效期</string>
+    <string name="imd_use">立即使用</string>
+
+    <string name="trade_xzprice">选择金额</string>
+    <string name="trade_pay_type">支付方式</string>
+    <string name="trade_ali_pay">支付宝支付</string>
+    <string name="trade_wx_pay">微信支付</string>
+    <string name="trade_u_pay">银联支付</string>
+    <string name="trade_determine">确定</string>
+    <string name="recharge_introduction">资金存入交易所账户，受政府监控，安全无风险</string>
+    <string name="trade_hint_security">账户资金安全保障中</string>
+    <string name="pw_presnt_hint">提现金额小于等于300元的，一次性收取手续费3元/笔；提现金额大于300元时，按照提现金额的1%计为提现手续费， 30元封顶。</string>
+    <string name="pw_presnt_time_hint">充值到账时间为T+0（T为申请当日），申请提现到账时间为T+1(周末节假日顺延）（T为申请当日）</string>
+    <string name="trade_add_bank">+ 实名认证银行卡</string>
+    <string name="trade_all_present">全部提现</string>
+    <string name="trade_present_sxf">提现手续费</string>
+    <string name="trade_present_yuan">元</string>
+    <string name="trade_present_time">到账时间</string>
+    <string name="trade_user_idcard">身份证</string>
+    <string name="trade_save">保存</string>
+
+    <string name="digits">0123456789abcdefghijklmnopqrstuvwxyz</string>
+    <string name="digits_zh">0123456789abcdefghijklmnopqrstuvwxyz@._</string>
+
+    <string name="please_open_permission">请在应用管理中打开“%s”访问权限！</string>
+    <string name="camera">相机</string>
+    <string name="storage">存储</string>
+    <string name="sd_card_not_use">SD卡不可用</string>
+
+
+    <string name="appbar_fix_behavior">com.pengpei.weipan.widget.FixAppBarBehavior</string>
+
+</resources>

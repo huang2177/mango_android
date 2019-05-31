@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_bottom">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_18sp"
+        android:textColor="@color/color_333333"
+        android:text="---"/>
+
+
+    <com.paizhong.manggo.widget.DinTextView
+        android:id="@+id/tv_dw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_21sp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:text="---"/>
+
+
+    <com.paizhong.manggo.widget.DinTextView
+        android:id="@+id/tvw_price_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_14sp"
+        android:layout_marginLeft="@dimen/dimen_3dp"
+        android:text="0"/>
+
+    <com.paizhong.manggo.widget.DinTextView
+        android:id="@+id/tv_price_percentage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:textSize="@dimen/dimen_14sp"
+        android:text="0%"/>
+
+
+       <TextView
+           android:id="@+id/tv_all_select"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/color_333333"
+           android:textSize="@dimen/dimen_15sp"
+           android:drawableRight="@drawable/bg_state_select"
+           android:drawablePadding="@dimen/dimen_5dp"
+           android:text="全选"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"
+        android:layout_marginTop="@dimen/dimen_15dp"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="@dimen/dimen_12dp">
+
+             <TextView
+                 android:id="@+id/tv_cancel"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/color_b2b2b2"
+                 android:textSize="@dimen/dimen_20sp"
+                 android:paddingTop="@dimen/dimen_13dp"
+                 android:paddingBottom="@dimen/dimen_13dp"
+                 android:background="@color/color_F8F8F8"
+                 android:gravity="center"
+                 android:layout_weight="1"
+                 android:text="取消 "/>
+
+
+             <TextView
+                 android:id="@+id/tv_close_position"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/color_ffffff"
+                 android:textSize="@dimen/dimen_20sp"
+                 android:paddingTop="@dimen/dimen_13dp"
+                 android:paddingBottom="@dimen/dimen_13dp"
+                 android:background="@color/color_008EFF"
+                 android:gravity="center"
+                 android:layout_weight="1"
+                 android:text="快速平仓"/>
+         </LinearLayout>
+</LinearLayout>

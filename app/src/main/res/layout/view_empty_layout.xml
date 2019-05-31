@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableTop="@mipmap/ic_empty_no_data"
+    android:drawablePadding="@dimen/dimen_15dp"
+    android:gravity="center"
+    android:paddingTop="@dimen/dimen_50dp"
+    android:text="暂无跟买"
+    android:textColor="@color/color_b2b2b2"
+    android:textSize="@dimen/dimen_14sp" />
+
+

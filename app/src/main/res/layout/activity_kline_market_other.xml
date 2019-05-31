@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_kline_market_other_layout" />
+
+    <View
+        android:id="@+id/v_content_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <com.paizhong.manggo.widget.tab.KLineCommonTabLayout
+        android:id="@+id/commonTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/v_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color" />
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+      <FrameLayout
+          android:id="@+id/ll_jump_trade"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <TextView
+              android:id="@+id/tv_jump_trade"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_shape_r3_008eff"
+              android:paddingTop="@dimen/dimen_8dp"
+              android:paddingBottom="@dimen/dimen_8dp"
+              android:textSize="@dimen/dimen_15sp"
+              android:textColor="@color/color_ffffff"
+              android:textStyle="bold"
+              android:layout_marginLeft="@dimen/dimen_20dp"
+              android:layout_marginRight="@dimen/dimen_20dp"
+              android:layout_marginTop="@dimen/dimen_10dp"
+              android:layout_marginBottom="@dimen/dimen_10dp"
+              android:gravity="center"
+              android:text="前往交易大厅" />
+
+      </FrameLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_kline_bottom_lan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_36dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+             <View
+                 android:id="@+id/v_kline_bottom_lan"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/line_height"
+                 android:background="@color/line_color"
+                 android:visibility="gone"/>
+
+            <com.paizhong.manggo.widget.tab.KLineCommonNrTabLayout
+                android:id="@+id/commonTab_lan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_jump_trade_lan"
+            android:layout_width="@dimen/dimen_200dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_008EFF"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="前往交易大厅"
+            android:textColor="@color/color_ffffff"/>
+    </LinearLayout>
+</LinearLayout>

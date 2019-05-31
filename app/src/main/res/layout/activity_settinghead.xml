@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_FAFAFA">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="@color/colorWhite"
+        app:contentInsetStart="0dp"
+        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll">
+
+
+        <com.paizhong.manggo.widget.DrawableCenterTextView
+            android:id="@+id/tv_left"
+            style="?attr/toolbarNavigationButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="@dimen/title_height"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_18sp"
+            android:text="头像"/>
+
+
+           <TextView
+               android:id="@+id/tv_save"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/dimen_15sp"
+               android:textColor="@color/color_ffffff"
+               android:background="@drawable/bg_shape_r3_008eff"
+               android:paddingTop="@dimen/dimen_5dp"
+               android:paddingBottom="@dimen/dimen_5dp"
+               android:paddingRight="@dimen/dimen_15dp"
+               android:paddingLeft="@dimen/dimen_15dp"
+               android:layout_gravity="right"
+               android:layout_marginRight="@dimen/dimen_10dp"
+               android:text="保存"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.paizhong.manggo.widget.FixRefreshLayout
+        android:id="@+id/smart_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableAutoLoadMore="false">
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/rv_recycler_view"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/color_FAFAFA"/>
+    </com.paizhong.manggo.widget.FixRefreshLayout>
+</LinearLayout>

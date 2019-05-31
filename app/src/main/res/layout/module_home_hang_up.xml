@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.paizhong.manggo.widget.expand.ExpandableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expandable_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_38dp"
+    android:background="#ca000000"
+    android:paddingLeft="@dimen/app_margin"
+    android:paddingTop="@dimen/dimen_4dp"
+    android:paddingRight="@dimen/app_margin"
+    android:paddingBottom="@dimen/dimen_4dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="看准行情，挂单布局，便捷高效"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/dimen_13sp" />
+
+
+    <com.paizhong.manggo.widget.RefreshView
+        android:id="@+id/tv_hangup_order"
+        android:layout_width="@dimen/dimen_85dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@drawable/bg_shape_follow_buy"
+        android:gravity="center"
+        android:text="挂单布局"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/dimen_15sp" />
+
+</com.paizhong.manggo.widget.expand.ExpandableLayout>

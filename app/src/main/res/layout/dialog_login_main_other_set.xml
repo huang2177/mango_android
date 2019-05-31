@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_new_pwd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_33dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+    <EditText
+        android:id="@+id/et_new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/ic_login_pwd"
+        android:drawablePadding="@dimen/dimen_15dp"
+        android:hint="@string/setting_new_pwd"
+        android:inputType="numberPassword"
+        android:maxLength="12"
+        android:maxLines="1"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_BFBFBF"
+        android:textSize="@dimen/dimen_17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_21dp"
+        android:background="@color/line_color" />
+
+
+    <EditText
+        android:id="@+id/et_new_pwd_qren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/ic_login_pwd"
+        android:drawablePadding="@dimen/dimen_15dp"
+        android:hint="@string/setting_new_qren_pwd_6"
+        android:inputType="numberPassword"
+        android:maxLength="12"
+        android:maxLines="1"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_BFBFBF"
+        android:textSize="@dimen/dimen_17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:id="@+id/tv_jump_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:text="去登录"
+        android:textColor="@color/color_008EFF"
+        android:textSize="@dimen/dimen_14sp" />
+
+</LinearLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/color_F8F8F8">
+
+    <LinearLayout
+        android:id="@+id/common_tab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_30dp">
+
+        <TextView
+            android:id="@+id/common_tab_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/selector_tab_market"
+            android:text="分时"/>
+
+        <View
+            android:id="@+id/common_tab_line1"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@drawable/bg_shape_market_tab"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/common_tab8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dimen_30dp">
+
+        <TextView
+            android:id="@+id/common_tab_name8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/selector_tab_market"
+            android:text="1分钟"/>
+
+        <View
+            android:id="@+id/common_tab_line8"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@drawable/bg_shape_market_tab"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/common_tab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dimen_30dp">
+
+        <TextView
+            android:id="@+id/common_tab_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/selector_tab_market"
+            android:text="5分钟"/>
+
+        <View
+            android:id="@+id/common_tab_line2"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@drawable/bg_shape_market_tab"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/common_tab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dimen_30dp">
+
+        <TextView
+            android:id="@+id/common_tab_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/selector_tab_market"
+            android:text="15分钟"/>
+
+        <View
+            android:id="@+id/common_tab_line3"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@drawable/bg_shape_market_tab"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/common_tab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dimen_30dp">
+
+        <TextView
+            android:id="@+id/common_tab_name4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/selector_tab_market"
+            android:text="30分钟"/>
+
+        <View
+            android:id="@+id/common_tab_line4"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@drawable/bg_shape_market_tab"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/common_tab5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dimen_30dp">
+
+        <TextView
+            android:id="@+id/common_tab_name5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/selector_tab_market"
+            android:text="1小时"/>
+
+        <View
+            android:id="@+id/common_tab_line5"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@drawable/bg_shape_market_tab"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/common_tab6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dimen_30dp">
+
+        <TextView
+            android:id="@+id/common_tab_name6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/selector_tab_market"
+            android:text="4小时"/>
+
+        <View
+            android:id="@+id/common_tab_line6"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@drawable/bg_shape_market_tab"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/common_tab7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <TextView
+            android:id="@+id/common_tab_name7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/selector_tab_market"
+            android:text="日线"/>
+
+        <View
+            android:id="@+id/common_tab_line7"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@drawable/bg_shape_market_tab"
+            android:visibility="invisible"/>
+    </LinearLayout>
+</LinearLayout>

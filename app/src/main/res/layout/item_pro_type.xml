@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.paizhong.manggo.widget.CircleImageView
+        android:id="@+id/iv_point"
+        android:layout_width="@dimen/dimen_8dp"
+        android:layout_height="@dimen/dimen_8dp" />
+
+    <TextView
+        android:id="@+id/tv_pro_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_3dp"
+        android:textColor="@color/color_727272"
+        android:textSize="@dimen/dimen_13sp" />
+
+    <TextView
+        android:id="@+id/tv_pro_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_35393C"
+        android:textSize="@dimen/dimen_13sp" />
+
+</LinearLayout>

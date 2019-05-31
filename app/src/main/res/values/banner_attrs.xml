@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="RotateLoading">
+        <attr name="loading_width" format="dimension" />
+        <attr name="loading_color" format="color" />
+        <attr name="shadow_position" format="integer" />
+    </declare-styleable>
+
+</resources>

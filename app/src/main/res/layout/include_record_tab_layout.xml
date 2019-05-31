@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.paizhong.manggo.widget.expand.ExpandableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/expanded_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:layout_marginBottom="@dimen/dimen_3dp">
+
+        <com.paizhong.manggo.widget.tab.SlidingTabLayout
+            android:id="@+id/common_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:paddingBottom="@dimen/dimen_12dp"
+            app:tl_iconVisible="false"
+            app:tl_indicator_anim_duration="400"
+            app:tl_indicator_anim_enable="true"
+            app:tl_indicator_color="@color/color_FEBC18"
+            app:tl_indicator_gravity="BOTTOM"
+            app:tl_indicator_height="@dimen/dimen_4dp"
+            app:tl_indicator_style="NORMAL"
+            app:tl_indicator_width="@dimen/dimen_30dp"
+            app:tl_tab_padding="0dp"
+            app:tl_tab_sec_padding="@dimen/dimen_30dp"
+            app:tl_tab_space_equal="true"
+            app:tl_textBold="BOTH"
+            app:tl_textSelectColor="@color/color_333333"
+            app:tl_textUnselectColor="@color/color_A7A7A7"
+            app:tl_textsize="@dimen/dimen_16sp" />
+
+        <com.paizhong.manggo.widget.tab.SlidingTabLayout
+            android:id="@+id/sliding_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_2dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            app:tl_indicator_anim_enable="true"
+            app:tl_indicator_color="@color/color_e6e6e6"
+            app:tl_indicator_style="BLOCK"
+            app:tl_tab_padding="@dimen/dimen_10dp"
+            app:tl_textSelectColor="@color/color_333333"
+            app:tl_textUnselectColor="@color/color_B1B1B3"
+            app:tl_textsize="@dimen/dimen_14sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+</com.paizhong.manggo.widget.expand.ExpandableLayout>

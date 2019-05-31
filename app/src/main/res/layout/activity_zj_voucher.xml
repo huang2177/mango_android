@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/layout_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"/>
+
+    <com.paizhong.manggo.widget.tab.CommonNoViewTabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/commonTab"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_marginLeft="-3dp"
+        android:background="@color/color_FAFAFA"
+        app:tl_iconVisible="false"
+        app:tl_indicator_anim_duration="400"
+        app:tl_indicator_anim_enable="true"
+        app:tl_indicator_color="@color/color_008EFF"
+        app:tl_indicator_corner_radius="4dp"
+        app:tl_indicator_gravity="BOTTOM"
+        app:tl_indicator_height="@dimen/dimen_3dp"
+        app:tl_indicator_style="NORMAL"
+        app:tl_indicator_width="@dimen/dimen_30dp"
+        app:tl_special_select_color_blue="false"
+        app:tl_textBold="BOTH"
+        app:tl_textSelectColor="@color/color_008EFF"
+        app:tl_textUnselectColor="@color/color_878787"
+        app:tl_textsize="@dimen/dimen_16sp"
+        app:tl_textPaddingLeft="@dimen/dimen_18dp"
+        app:tl_textPaddingRight="@dimen/dimen_18dp"
+        app:tl_underline_color="@color/color_FAFAFA"
+        app:tl_underline_height="@dimen/dimen_3dp" />
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/color_ffffff">
+    <com.paizhong.manggo.widget.FixRefreshLayout
+        android:id="@+id/smart_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.paizhong.manggo.widget.recycle.RecyclerView
+            android:id="@+id/rv_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.paizhong.manggo.widget.FixRefreshLayout>
+    <include layout="@layout/empty_view_layout" />
+
+   </FrameLayout>
+</LinearLayout>

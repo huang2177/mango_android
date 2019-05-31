@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_54dp"
+    android:background="@color/color_ffffff"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/app_margin"
+    android:paddingRight="@dimen/app_margin">
+
+    <com.paizhong.manggo.widget.TitleText
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="跟买"
+        android:textColor="@color/color_000000"
+        android:textSize="@dimen/dimen_26sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:src="@mipmap/ic_more" />
+
+</RelativeLayout>

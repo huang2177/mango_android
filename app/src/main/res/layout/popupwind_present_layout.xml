@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:background="@mipmap/pw_right_bg">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/color_A4A5A6"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:text="提现手续费"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/dimen_14sp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:lineSpacingExtra="@dimen/dimen_6dp"
+        android:text="@string/pw_presnt_hint"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_14sp"
+        android:textColor="@color/color_A4A5A6"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:text="到账时间"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/dimen_14sp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:lineSpacingExtra="@dimen/dimen_6dp"
+        android:text="@string/pw_presnt_time_hint"/>
+
+    </LinearLayout>
+</LinearLayout>

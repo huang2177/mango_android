@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_add_root_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_23sp"
+        android:textColor="@color/color_333333"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:text="信息安全保障中"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_security"
+        android:drawablePadding="@dimen/dimen_5dp"
+        android:text="保障您的用卡安全"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/color_727272"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_20dp">
+
+        <TextView
+            android:layout_width="@dimen/dimen_66dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_333333"
+            android:text="银行卡号" />
+
+
+        <EditText
+            android:id="@+id/et_bank_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_b2b2b2"
+            android:textSize="@dimen/dimen_16sp"
+            android:digits="@string/digits_zh"
+            android:layout_marginLeft="@dimen/dimen_18dp"
+            android:background="@null"
+            android:hint="请输入您的银行卡号"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/color_E3E3E3"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginLeft="@dimen/dimen_99dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="@dimen/dimen_66dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_333333"
+            android:text="手机号" />
+
+
+        <EditText
+            android:id="@+id/et_bank_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_b2b2b2"
+            android:textSize="@dimen/dimen_16sp"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:layout_marginLeft="@dimen/dimen_18dp"
+            android:background="@null"
+            android:hint="请输入银行卡预留手机号"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/color_E3E3E3"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginLeft="@dimen/dimen_99dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="@dimen/dimen_66dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_333333"
+            android:text="身份证号" />
+
+
+        <EditText
+            android:id="@+id/et_user_idCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_b2b2b2"
+            android:inputType="text"
+            android:textSize="@dimen/dimen_16sp"
+            android:digits="@string/digits"
+            android:layout_marginLeft="@dimen/dimen_18dp"
+            android:background="@null"
+            android:hint="请输入您的身份证号"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginLeft="@dimen/dimen_99dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="@dimen/dimen_66dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/color_333333"
+            android:text="真实姓名" />
+
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_b2b2b2"
+            android:maxLength="20"
+            android:textSize="@dimen/dimen_16sp"
+            android:layout_marginLeft="@dimen/dimen_18dp"
+            android:background="@null"
+            android:hint="请输入您的真实姓名"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginLeft="@dimen/dimen_99dp"/>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_52dp"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/color_ffffff"
+        android:background="@drawable/bg_selector_btton"
+        android:gravity="center"
+        android:text="@string/trade_save"/>
+
+</LinearLayout>

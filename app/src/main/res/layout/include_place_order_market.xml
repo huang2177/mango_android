@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_market_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <com.paizhong.manggo.dialog.placeorder.PlaceOrderMarketTabLayout
+            android:id="@+id/pmt_market_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <include layout="@layout/include_place_order_market_tab"/>
+    </com.paizhong.manggo.dialog.placeorder.PlaceOrderMarketTabLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_minute_hour_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <com.paizhong.manggo.ui.kchart.views.MinuteHourView
+            android:id="@+id/minute_hour_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:isTouchEnabled="true"
+            app:isNewLinePrice="true"/>
+
+        <com.paizhong.manggo.ui.kchart.views.CrossView
+            android:id="@+id/cross_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+
+    <com.paizhong.manggo.ui.kchart.views.KChartView
+        android:id="@+id/ly_professional_kline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layerType="hardware"
+        android:visibility="gone"/>
+</LinearLayout>

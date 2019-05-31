@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_F7F7F7">
+
+     <TextView
+         android:id="@+id/common_tab_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/dimen_14dp"
+         android:layout_marginBottom="@dimen/dimen_14dp"
+         android:textSize="@dimen/dimen_16sp"
+         android:textColor="@color/color_008EFF"
+         android:textStyle="bold"
+         tools:text="中金物联"/>
+
+      <View
+          android:id="@+id/common_tab_line"
+          android:layout_width="@dimen/dimen_30dp"
+          android:layout_height="@dimen/dimen_3dp"
+          android:layout_gravity="center_horizontal"
+          android:background="@drawable/bg_shape_market_tab"/>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/app_margin"
+    android:layout_marginTop="@dimen/dimen_14dp"
+    android:gravity="center_vertical">
+
+
+   <LinearLayout
+       android:id="@+id/ll_hangup"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_marginRight="@dimen/dimen_50dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/color_878787"
+           android:textSize="@dimen/dimen_15sp"
+           android:text="挂单价"/>
+
+
+       <EditText
+           android:id="@+id/et_hangup_price"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:inputType="number"
+           android:maxLength="5"
+           android:textColor="@color/color_333333"
+           android:textSize="@dimen/dimen_21sp"
+           android:background="@drawable/bg_shape_r5_f7f8f9"
+           android:paddingLeft="@dimen/dimen_15dp"
+           android:paddingRight="@dimen/dimen_15dp"
+           android:minWidth="@dimen/dimen_30dp"
+           android:layout_marginLeft="@dimen/dimen_8dp"
+           android:hint=" "/>
+
+          <com.paizhong.manggo.widget.DinTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/color_333333"
+              android:textSize="@dimen/dimen_18sp"
+              android:layout_marginLeft="@dimen/dimen_8dp"
+              android:layout_marginRight="@dimen/dimen_8dp"
+              android:text="±"/>
+
+
+       <EditText
+           android:id="@+id/et_hangup_num"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:inputType="number"
+           android:maxLength="5"
+           android:textColor="@color/color_333333"
+           android:textSize="@dimen/dimen_21sp"
+           android:background="@drawable/bg_shape_r5_f7f8f9"
+           android:paddingLeft="@dimen/dimen_15dp"
+           android:paddingRight="@dimen/dimen_15dp"
+           android:minWidth="@dimen/dimen_30dp"
+           android:hint=" "/>
+   </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_878787"
+        android:textSize="@dimen/dimen_15sp"
+        android:layout_marginRight="@dimen/app_margin"
+        android:text="类型"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="9">
+        <LinearLayout
+            android:id="@+id/ll_price_num1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_33dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:gravity="center"
+            android:layout_weight="3">
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_price_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_828282"
+                android:textSize="@dimen/dimen_20sp"
+                tools:text="8"/>
+
+            <TextView
+                android:id="@+id/tv_price_h_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_b2b2b2"
+                android:textSize="@dimen/dimen_12sp"
+                android:layout_marginLeft="@dimen/dimen_2dp"
+                android:text="@string/text15"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_price_num2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_33dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:gravity="center"
+            android:layout_weight="3">
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_price_num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_828282"
+                android:textSize="@dimen/dimen_20sp"
+                tools:text="100"/>
+
+            <TextView
+                android:id="@+id/tv_price_h_num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_b2b2b2"
+                android:textSize="@dimen/dimen_12sp"
+                android:layout_marginLeft="@dimen/dimen_2dp"
+                android:text="@string/text15"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_price_num3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_33dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/app_margin"
+            android:gravity="center"
+            android:layout_weight="3">
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_price_num3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_828282"
+                android:textSize="@dimen/dimen_20sp"
+                tools:text="500"/>
+
+            <TextView
+                android:id="@+id/tv_price_h_num3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_b2b2b2"
+                android:textSize="@dimen/dimen_12sp"
+                android:layout_marginLeft="@dimen/dimen_2dp"
+                android:text="@string/text15"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

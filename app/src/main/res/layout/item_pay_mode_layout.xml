@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pay"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/app_margin"
+    android:paddingTop="@dimen/dimen_5dp"
+    android:paddingRight="@dimen/app_margin"
+    android:paddingBottom="@dimen/dimen_5dp">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_u_pay" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_toRightOf="@id/iv_img"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dimen_15sp"
+        tools:text="@string/trade_u_pay" />
+
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_6dp"
+        android:layout_toRightOf="@id/tv_name"
+        android:background="@drawable/bg_shape_market_tab"
+        android:paddingLeft="@dimen/dimen_6dp"
+        android:paddingTop="@dimen/dimen_2dp"
+        android:paddingRight="@dimen/dimen_6dp"
+        android:paddingBottom="@dimen/dimen_2dp"
+        android:text="笔笔加送5%"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/dimen_12sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_u_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bg_state_select" />
+
+    <include layout="@layout/include_recharge_bank_card" />
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/app_margin"
+    android:paddingTop="@dimen/dimen_10dp"
+    android:paddingRight="@dimen/app_margin"
+    android:paddingBottom="@dimen/dimen_5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:text="最新跟买"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dimen_18dp"
+        android:textStyle="bold" />
+
+
+    <com.paizhong.manggo.widget.tab.SlidingTabLayout
+        android:id="@+id/commonTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tl_indicator_anim_enable="false"
+        app:tl_indicator_color="@color/color_e6e6e6"
+        app:tl_indicator_style="BLOCK"
+        app:tl_scroll_to_current="true"
+        app:tl_tab_padding="10dp"
+        app:tl_textSelectColor="@color/color_333333"
+        app:tl_textUnselectColor="@color/color_B1B1B3"
+        app:tl_textsize="@dimen/dimen_14sp" />
+
+</LinearLayout>

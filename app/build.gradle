@@ -1,0 +1,146 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.paizhong.manggotest"  // com.paizhong.manggo  com.paizhong.manggotest
+        flavorDimensions "versionCode"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 14
+        versionName "3.2.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "ea4485ebab5dad01ecbeb881", //正式:ea4485ebab5dad01ecbeb881    测试:b4fb928c4b0159c3a01b2acd
+                JPUSH_CHANNEL: "developer-default",
+        ]
+    }
+
+    /*-----打包-----*/
+    signingConfigs {
+        release {
+            storeFile file('../angjing_android.jks')
+            storePassword 'angjing'
+            keyAlias 'angjing_android'
+            keyPassword 'angjing'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        debug {
+            v1SigningEnabled true
+            v2SigningEnabled true
+            keyAlias 'angjing_android'
+            keyPassword 'angjing'
+            storeFile file('../angjing_android.jks')
+            storePassword 'angjing'
+        }
+    }
+
+    /*-----混淆-----*/
+    buildTypes {
+        release {
+            zipAlignEnabled true
+            minifyEnabled true
+            debuggable false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    /**读取文件中渠道*/
+    productFlavors {
+        def channels = []
+        file("../channel.cfg").eachLine { line ->
+            if (line != null && line != "") {
+                channels << line
+            }
+        }
+        channels.each { name ->
+            "$name" {
+                "$name" {
+                    println("$name")
+                    manifestPlaceholders = [channel: "$name"]
+                }
+            }
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    //http请求
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.8.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    //rx
+    //implementation 'io.reactivex:rxjava:1.1.9'
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    //控件处理
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //图片处理
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    //突破Dex文件方法数不能超过最大值65536的上限
+    implementation 'com.android.support:multidex:1.0.3'
+    //跨进程存储
+    implementation 'net.grandcentrix.tray:tray:0.12.0'
+    //刷新控件
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    //总线处理框架
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //饼图
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    //解析Html内容显示在WebView中
+    implementation 'org.jsoup:jsoup:1.10.2'
+    //友盟统计
+    implementation 'com.umeng.analytics:analytics:6.1.4'
+    //极光推送
+    implementation 'cn.jiguang.sdk:jpush:3.1.5'
+    implementation 'cn.jiguang.sdk:jcore:1.2.3'
+    //客服系统
+    api project(':sobotsdk')
+    //版本更新
+    api project(':updateLib')
+    implementation 'com.rabbitmq:amqp-client:4.4.0'
+    implementation 'org.slf4j:slf4j-nop:1.7.25'
+    //对所有的配置操作
+    configurations.all {
+        //全局使用指定版本
+        resolutionStrategy.force 'com.android.support:multidex:1.0.3'
+    }
+}

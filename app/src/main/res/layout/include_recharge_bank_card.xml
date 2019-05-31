@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.paizhong.manggo.widget.expand.ExpandableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/expandable_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv_name"
+    android:layout_marginTop="@dimen/dimen_8dp"
+    android:background="@mipmap/bg_recharge"
+    android:paddingLeft="@dimen/dimen_10dp"
+    android:paddingTop="@dimen/dimen_20dp"
+    android:paddingRight="@dimen/dimen_10dp"
+    android:paddingBottom="@dimen/dimen_12dp"
+    tools:showIn="@layout/item_pay_mode_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:paddingBottom="@dimen/dimen_3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/bg_bank"
+                android:drawablePadding="@dimen/dimen_7dp"
+                android:text="我的卡包"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <TextView
+                android:id="@+id/tv_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/ic_arrow_down"
+                android:drawablePadding="@dimen/dimen_5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingTop="@dimen/dimen_3dp"
+                android:paddingBottom="@dimen/dimen_3dp"
+                android:text="展开"
+                android:textColor="@color/color_b2b2b2"
+                android:textSize="@dimen/dimen_12sp" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bank_card_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_7dp" />
+
+        <LinearLayout
+            android:id="@+id/input_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edit_bank_input"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_bank_card_gray"
+                android:inputType="number"
+                android:maxLength="26"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <TextView
+                android:id="@+id/tv_input"
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_marginLeft="@dimen/dimen_50dp"
+                android:background="@drawable/bg_bank_card_gray1"
+                android:gravity="center"
+                android:text="添加"
+                android:textColor="@color/color_b2b2b2" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.paizhong.manggo.widget.expand.ExpandableLayout>

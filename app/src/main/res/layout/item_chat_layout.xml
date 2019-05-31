@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimen_10dp"
+    android:layout_marginTop="@dimen/dimen_7dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_727272"
+            android:textSize="@dimen/dimen_13sp"
+            tools:text="Bing"/>
+
+         <TextView
+             android:id="@+id/tv_time"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/dimen_11sp"
+             android:textColor="@color/color_b2b2b2"
+             android:layout_marginLeft="@dimen/dimen_4dp"
+             android:background="@drawable/bg_shape_chat_time"
+             android:paddingLeft="@dimen/dimen_6dp"
+             android:paddingRight="@dimen/dimen_6dp"
+             android:paddingTop="@dimen/dimen_2dp"
+             android:paddingBottom="@dimen/dimen_2dp"
+             android:maxLines="1"
+             tools:text="1分钟前"/>
+
+         <TextView
+             android:id="@+id/tv_vipUser"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/bg_shape_r3_008eff"
+             android:textColor="@color/color_ffffff"
+             android:textSize="@dimen/dimen_11sp"
+             android:paddingLeft="@dimen/dimen_8dp"
+             android:paddingRight="@dimen/dimen_8dp"
+             android:paddingTop="@dimen/dimen_1dp"
+             android:paddingBottom="@dimen/dimen_1dp"
+             android:layout_marginLeft="@dimen/dimen_4dp"
+             android:visibility="gone"
+             android:maxLines="1"
+             android:text="禁言"/>
+    </LinearLayout>
+
+     <TextView
+         android:id="@+id/tv_content"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="@dimen/dimen_14sp"
+         android:layout_marginTop="@dimen/dimen_2dp"
+         android:paddingTop="@dimen/dimen_8dp"
+         android:paddingBottom="@dimen/dimen_8dp"
+         android:paddingLeft="@dimen/dimen_7dp"
+         android:paddingRight="@dimen/dimen_7dp"
+         android:textColor="@color/color_ffffff"
+         android:maxLines="1"
+         android:background="@drawable/bg_shape_chat"
+         tools:text="今天镍怎么看，大牛有招吗？"/>
+</LinearLayout>

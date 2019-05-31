@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_50dp">
+
+    <LinearLayout
+        android:id="@+id/ll_product_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_50dp"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_12dp"
+            android:paddingRight="@dimen/dimen_12dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_14sp"
+                android:textColor="@color/color_323232"
+                android:layout_gravity="center_vertical"
+                android:text="GL小麦"/>
+
+
+            <TextView
+                android:id="@+id/tv_product_xiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_11sp"
+                android:paddingLeft="@dimen/dimen_1dp"
+                android:paddingRight="@dimen/dimen_1dp"
+                android:background="@drawable/bg_rshape_gray"
+                android:textColor="@color/color_ffffff"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_gravity="center_vertical"
+                android:text="休"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_12dp"
+            android:paddingRight="@dimen/dimen_12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_product_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_15sp"
+                android:textColor="@color/color_1AC47A"
+                android:text="40205"/>
+
+
+            <ImageView
+                android:id="@+id/iv_product_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:src="@mipmap/ic_down_green"/>
+        </LinearLayout>
+
+         <View
+             android:id="@+id/v_product_bottom_line"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/line_height"
+             android:background="@color/line_color"/>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/v_product_line"
+        android:layout_width="@dimen/line_height"
+        android:layout_height="31dp"
+        android:background="@color/line_color"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"/>
+</LinearLayout>

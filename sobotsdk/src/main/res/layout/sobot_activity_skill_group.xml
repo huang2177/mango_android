@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/sobot_container"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="@drawable/sobot_bg_skill_activity"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="@string/sobot_choice_test"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <GridView
+            android:id="@+id/sobot_gv_skill"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:cacheColorHint="@android:color/transparent"
+            android:fadingEdge="none"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@null"
+            android:numColumns="2"
+            android:overScrollMode="never"
+            android:scrollbarThumbVertical="@drawable/sobot_skill_group_scroll_img"
+            android:scrollbars="vertical"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ececec" />
+
+        <Button
+            android:id="@+id/sobot_btn_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/sobot_color_skill_cancel_bg"
+            android:text="@string/sobot_cancel"
+            android:textColor="@drawable/sobot_btn_skill_selecter"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

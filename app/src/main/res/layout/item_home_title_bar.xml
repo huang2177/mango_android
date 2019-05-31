@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_54dp"
+    android:background="@color/color_ffffff"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/app_margin"
+    android:paddingRight="@dimen/app_margin">
+
+    <com.paizhong.manggo.widget.TitleText
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="芒果淘金"
+        android:textColor="@color/color_000000"
+        android:textSize="@dimen/dimen_26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_course"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/tv_service"
+        android:drawableLeft="@mipmap/img_course"
+        android:drawablePadding="@dimen/dimen_5dp"
+        android:gravity="center"
+        android:text="教程"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dimen_14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:drawableLeft="@mipmap/img_service"
+        android:drawablePadding="@dimen/dimen_5dp"
+        android:gravity="center"
+        android:text="客服"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dimen_14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

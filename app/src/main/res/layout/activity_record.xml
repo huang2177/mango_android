@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.paizhong.manggo.widget.FixRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/smart_refresh_head"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    app:srlEnableLoadMore="false"
+    app:srlEnableRefresh="false">
+
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/ab_barLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            app:elevation="0dp">
+
+            <include layout="@layout/include_record_collapsing_layout" />
+
+            <include layout="@layout/include_record_tab_layout" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.paizhong.manggo.widget.FixRefreshLayout
+            android:id="@+id/smart_refresh_footer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:srlEnableAutoLoadMore="false"
+            app:srlEnableLoadMore="false"
+            app:srlEnableRefresh="false">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_ffffff"
+                android:overScrollMode="never" />
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.paizhong.manggo.widget.FixRefreshLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</com.paizhong.manggo.widget.FixRefreshLayout>

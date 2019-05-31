@@ -1,0 +1,159 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--设置沉浸式状态栏背景颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--设置各控制元件(如：EditText光标、check box、switch 或是 radoi) 被勾选 (checked) 或是选定 (selected) 的颜色-->
+        <item name="colorAccent">@color/color_008EFF</item>
+        <!-- toolBar背景颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 标题字体颜色-->
+        <item name="android:textColorPrimary">@color/color_333333</item>
+        <!-- toolBar高度-->
+        <item name="actionBarSize">@dimen/title_height</item>
+        <!-- 设置输入框不被软键盘遮挡-->
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <!-- 分割线-->
+        <!--<item name="android:listDivider">@drawable/divider_horizontal</item>-->
+    </style>
+
+
+    <!-- 加载提示 -->
+    <style name="net_load_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <!-- 解决启动页刚启动时白屏问题，实现秒启动-->
+    <style name="AppTheme.Launcher" parent="AppTheme">
+        <item name="android:windowBackground">@mipmap/splash_</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentNavigation" tools:ignore="NewApi">true</item>
+    </style>
+
+
+    <style name="H_Dialog_Style">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="count_down_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:text">@string/verify_get</item>
+        <item name="android:textColor">@drawable/color_verify_enable_selector</item>
+        <item name="android:paddingLeft">@dimen/dimen_5dp</item>
+        <item name="android:paddingRight">@dimen/dimen_5dp</item>
+        <item name="android:paddingTop">@dimen/dimen_7dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_7dp</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+    </style>
+
+    <style name="count_down_view_register">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:text">@string/verify_get</item>
+        <item name="android:textColor">@drawable/color_verify_enable_selector</item>
+        <item name="android:paddingLeft">@dimen/dimen_10dp</item>
+        <item name="android:paddingRight">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_7dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_7dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+    </style>
+
+    <style name="center_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowAnimationStyle">@style/areward_animation</item>
+    </style>
+
+    <style name="count_down_view_jys">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/verify_get</item>
+        <item name="android:textColor">@drawable/color_verify_enable_selector</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+    </style>
+
+    <style name="areward_animation">
+        <item name="android:windowEnterAnimation">@anim/anim_areward_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/exit</item>
+    </style>
+
+
+    <style name="AnimBottom_bottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/date_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/date_bottom_out</item>
+    </style>
+
+
+    <style name="AnimBottom_left" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/date_left_in</item>
+        <item name="android:windowExitAnimation">@anim/date_left_out</item>
+    </style>
+
+    <style name="translucent_theme" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom_bottom</item>
+    </style>
+
+
+    <style name="translucent_theme_left">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom_left</item>
+    </style>
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:minHeight">12dp</item>
+        <item name="android:maxHeight">12dp</item>
+    </style>
+
+    <style name="weekIndicatorStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/dimen_13sp</item>
+        <item name="android:textColor">@color/color_878787</item>
+    </style>
+</resources>

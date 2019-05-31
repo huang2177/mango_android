@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color" />
+
+    <ListView
+        android:id="@+id/lv_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        android:id="@+id/tv_present"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_52dp"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/color_ffffff"
+        android:background="@drawable/bg_selector_btton"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="提交"/>
+
+    <TextView
+        android:id="@+id/tv_bottom_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:drawableLeft="@mipmap/ic_security"
+        android:drawablePadding="@dimen/dimen_5dp"
+        android:text="@string/trade_hint_security"
+        android:textColor="@color/color_878787"
+        android:textSize="@dimen/dimen_11sp" />
+</LinearLayout>

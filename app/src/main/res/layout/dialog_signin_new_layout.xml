@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/sign_new_bg">
+
+    <LinearLayout
+        android:id="@+id/ll_closed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="@dimen/dimen_44dp"
+            android:layout_height="@dimen/dimen_4dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:background="@drawable/bg_shape_r4_e6e6e6" />
+    </LinearLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/dimen_42sp"
+           android:textColor="@color/color_ffffff"
+           android:layout_gravity="center_horizontal"
+           android:text="签到抽奖赢积分"/>
+
+     <LinearLayout
+         android:id="@+id/ll_no_sign"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="@dimen/dimen_10dp"
+         android:gravity="center"
+         android:paddingBottom="@dimen/dimen_10dp"
+         android:paddingTop="@dimen/dimen_10dp">
+
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@mipmap/ic_sign_y"/>
+
+         <TextView
+             android:id="@+id/tv_no_sign_msg"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center_vertical"
+             android:textColor="@color/color_ffffff"
+             android:layout_marginLeft="@dimen/dimen_8dp"
+             android:textSize="@dimen/dimen_12sp"
+             android:text="已连续签到 - 天 |"/>
+
+          <LinearLayout
+              android:id="@+id/ll_score"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:background="@mipmap/btn_sign_no"
+              android:gravity="center"
+              android:layout_marginLeft="@dimen/dimen_7dp">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/color_ffffff"
+                  android:layout_gravity="center_vertical"
+                  android:textSize="@dimen/dimen_15sp"
+                  android:text="签到领 "/>
+
+              <com.paizhong.manggo.widget.DinTextView
+                  android:id="@+id/tv_no_sign"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/color_ffffff"
+                  android:textSize="@dimen/dimen_24sp"
+                  android:text="-"/>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/color_ffffff"
+                  android:layout_gravity="center_vertical"
+                  android:textSize="@dimen/dimen_15sp"
+                  android:text=" 积分"/>
+          </LinearLayout>
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_sign_suc"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dimen_9dp">
+
+            <TextView
+                android:id="@+id/tv_sign_msg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/color_ffffff" />
+
+
+            <TextView
+                android:id="@+id/tv_sign_msg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/dimen_12sp"
+                android:textColor="@color/color_ffffff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@mipmap/sign_new_bg2"
+        android:layout_marginTop="@dimen/dimen_23dp"
+        android:paddingBottom="@dimen/dimen_30dp"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dimen_23dp"
+            android:layout_marginRight="@dimen/dimen_23dp">
+
+            <TextView
+                android:id="@+id/tv_item1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_sign_select"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_item2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_sign_select"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_item3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_sign_select"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_18sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dimen_23dp"
+            android:layout_marginRight="@dimen/dimen_23dp">
+
+            <TextView
+                android:id="@+id/tv_item8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_sign_select"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_18sp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/iv_item_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@mipmap/btn_sign_start"/>
+
+            <TextView
+                android:id="@+id/tv_item4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_sign_select"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_18sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dimen_23dp"
+            android:layout_marginRight="@dimen/dimen_23dp">
+
+            <TextView
+                android:id="@+id/tv_item7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_sign_select"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_item6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_sign_select"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_item5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_sign_select"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_18sp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

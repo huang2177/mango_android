@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_37dp"
+    android:layout_marginRight="@dimen/dimen_37dp"
+    android:background="@drawable/bg_dialog_mall">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_21sp"
+        android:textColor="@color/color_333333"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/text22"
+        android:layout_marginTop="@dimen/dimen_30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:paddingLeft="@dimen/dimen_20dp"
+        android:paddingRight="@dimen/dimen_20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_15sp"
+                android:textColor="@color/color_878787"
+                android:text="@string/text25"/>
+
+
+            <TextView
+                android:id="@+id/tv_varieties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dimen_19sp"
+                android:text="---"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_15sp"
+                android:textColor="@color/color_878787"
+                android:text="@string/text26"/>
+
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_new_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dimen_19sp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:text="---"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_15sp"
+                android:textColor="@color/color_878787"
+                android:text="@string/text27"/>
+
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_profit_loss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_19sp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:text="---"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginBottom="@dimen/dimen_24dp"
+        android:layout_marginTop="@dimen/dimen_30dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_capital_withdrawals"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_8dp"
+            android:text="@string/text23"
+            android:textColor="@color/color_b2b2b2"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/tv_determine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_shape_r5_008eff"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_8dp"
+            android:text="@string/text24"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_15sp" />
+    </LinearLayout>
+</LinearLayout>

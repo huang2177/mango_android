@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_FAFAFA">
+
+    <include  layout="@layout/layout_toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10dp"
+        android:background="@color/color_FAFAFA"/>
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_15dp"
+        android:hint="请输入昵称"
+        android:maxLength="7"
+        android:paddingLeft="@dimen/app_margin"
+        android:paddingRight="@dimen/app_margin"
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/color_333333"/>
+
+    <TextView
+        android:id="@+id/tv_qren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector_btton"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_8dp"
+        android:paddingTop="@dimen/dimen_8dp"
+        android:text="@string/qren"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/dimen_15sp" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:background="@color/color_ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_ffffff">
+
+        <!--未登录头-->
+        <include layout="@layout/include_fragment_user_nologin"/>
+        <!--未登录中-->
+        <include layout="@layout/include_fragment_user_nologin_center"/>
+
+        <!--登录头-->
+        <include layout="@layout/include_fragment_user_login"/>
+        <!--登录中-->
+        <include layout="@layout/include_fragment_user_login_center"/>
+
+        <!--底部-->
+        <include layout="@layout/include_fragment_user_bottom_layout"/>
+
+    </LinearLayout>
+</ScrollView>

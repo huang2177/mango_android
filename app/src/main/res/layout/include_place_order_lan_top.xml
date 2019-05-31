@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/app_margin"
+    android:layout_marginRight="@dimen/app_margin"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:layout_marginBottom="@dimen/dimen_10dp"
+    android:gravity="center_vertical">
+
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textStyle="bold"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_18sp" />
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_product_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:text="----"
+            android:textSize="@dimen/dimen_18sp" />
+
+        <ImageView
+            android:id="@+id/iv_down_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:src="@drawable/trade_buy_arrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_up_user_probability"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_place_order_up"
+        android:paddingTop="@dimen/dimen_6dp"
+        android:paddingBottom="@dimen/dimen_6dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_up_user_probability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/color_ffffff"
+            android:text="--用户"/>
+
+        <TextView
+            android:id="@+id/tv_up_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_20sp"
+            android:layout_marginLeft="@dimen/dimen_6dp"
+            android:text="@string/text9"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_down_user_probability"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_place_order_down"
+        android:paddingTop="@dimen/dimen_6dp"
+        android:paddingBottom="@dimen/dimen_6dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_down_user_probability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/color_ffffff"
+            android:text="--用户"/>
+
+        <TextView
+            android:id="@+id/tv_down_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_20sp"
+            android:layout_marginLeft="@dimen/dimen_6dp"
+            android:text="@string/text10"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_120dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+
+        <ImageView
+            android:id="@+id/iv_closed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_y_closed"/>
+    </LinearLayout>
+
+</LinearLayout>

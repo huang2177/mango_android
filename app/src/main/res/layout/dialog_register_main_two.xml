@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_register_two"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimen_20dp"
+    android:paddingRight="@dimen/dimen_20dp"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp">
+
+        <TextView
+            android:id="@+id/tv_register_two_front"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/register_left"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:text="上一步"
+            android:textSize="@dimen/dimen_17sp"
+            android:textColor="@color/color_727272"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/register_two"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_19dp"
+        android:text="请输入验证码"
+        android:textStyle="bold"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dimen_26sp"/>
+
+    <TextView
+        android:id="@+id/tv_register_two_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_7dp"
+        android:layout_marginBottom="@dimen/dimen_29dp"
+        android:text=""
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dimen_18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_register_two_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@null"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:inputType="number"
+            android:hint="请输入验证码"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_18sp"/>
+
+        <com.paizhong.manggo.widget.CountDownTextView
+            android:id="@+id/btn_sendCode"
+            style="@style/count_down_view_register"
+            android:background="@drawable/bg_shape_r15_008eff"
+            android:textColor="@color/color_ffffff"
+            android:enabled="false"
+            android:singleLine="true"
+            app:refer="@id/et_mobile"
+            app:from = "1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dimen_9dp"
+        android:background="@color/color_e6e6e6"/>
+
+    <TextView
+        android:id="@+id/tv_register_two_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text=""
+        android:textColor="@color/color_F74F54"
+        android:textSize="@dimen/dimen_13sp"
+        android:visibility="gone"/>
+
+</LinearLayout>

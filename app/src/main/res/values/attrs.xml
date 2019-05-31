@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MinuteHourView">
+        <attr name="isTouchEnabled" format="boolean" />
+        <attr name="isNewLinePrice" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="KLineCommonTabLayout">
+        <attr name="kLineCommonTabYeStyle" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RippleBackground">
+        <attr name="rb_color" format="color" />
+        <attr name="rb_strokeWidth" format="dimension" />
+        <attr name="rb_radius" format="dimension" />
+        <attr name="rb_duration" format="integer" />
+        <attr name="rb_rippleAmount" format="integer" />
+        <attr name="rb_scale" format="float" />
+        <attr name="rb_type" format="enum">
+            <enum name="fillRipple" value="0" />
+            <enum name="strokeRipple" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MyRadioButton">
+        <attr name="rbDrawableSize" format="dimension" />
+        <attr name="rbDrawableTop" format="reference" />
+        <attr name="rbDrawableLeft" format="reference" />
+        <attr name="rbDrawableRight" format="reference" />
+        <attr name="rbDrawableBottom" format="reference" />
+    </declare-styleable>
+
+
+    <!--k线数字控件 -->
+    <integer name="default_type">0</integer>
+    <integer name="default_start">0</integer>
+    <integer name="default_end">0</integer>
+    <integer name="default_decimal_place">2</integer>
+    <integer name="min_decimal_place">1</integer>
+    <integer name="max_decimal_place">9</integer>
+    <integer name="default_duration">500</integer>
+
+    <declare-styleable name="RiseNumberTextView">
+        <attr name="type" format="enum">
+            <enum name="decimal" value="0" />
+            <enum name="integer" value="1" />
+        </attr>
+        <attr name="startNum" format="float" />
+        <attr name="endNum" format="float" />
+        <attr name="decimalPlace" format="integer" />
+        <attr name="duration" format="integer" />
+    </declare-styleable>
+
+    <!--圆形图片-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MyViewPager">
+        <attr name="needReMeasure" format="boolean" />
+        <attr name="isCanScrolled" format="boolean" />
+    </declare-styleable>
+
+    <!-- 验证码倒计时样式 -->
+    <declare-styleable name="CountDownTextView">
+        <attr name="refer" format="reference" />
+        <attr name="from" format="integer"/>
+    </declare-styleable>
+
+    <!-- 秒刷的TextView -->
+    <declare-styleable name="RefreshView">
+        <attr name="enableMedium" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableLayout">
+        <attr name="el_duration" format="integer" />
+        <attr name="el_expanded" format="boolean" />
+        <attr name="el_parallax" format="float" />
+        <!-- {@deprecated Use el_parallax instead.} -->
+        <attr name="el_translate_children" format="boolean" />
+        <attr name="layout_expandable" format="boolean" />
+        <attr name="android:orientation" />
+    </declare-styleable>
+
+</resources>

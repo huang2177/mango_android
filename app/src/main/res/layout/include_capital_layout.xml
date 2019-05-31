@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@mipmap/bg_capital"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dimen_30dp"
+        android:paddingLeft="@dimen/dimen_20dp"
+        android:paddingRight="@dimen/dimen_20dp"
+        android:paddingTop="@dimen/dimen_23dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                android:text="爱淘商城资金帐户"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_security"
+                android:drawablePadding="@dimen/dimen_2dp"
+                android:textColor="@color/color_A7A7A7"
+                android:textSize="@dimen/dimen_12sp"
+                android:text="资金账户保护中"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginTop="@dimen/dimen_13dp"
+            android:background="@color/line_color" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_A7A7A7"
+            android:textSize="@dimen/dimen_14sp"
+            android:layout_marginTop="@dimen/dimen_13dp"
+            android:text="账户总资产(元)"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dimen_27sp"
+                android:text="-----"/>
+
+            <TextView
+                android:id="@+id/tv_withdrawals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_4dp"
+                android:gravity="center"
+                android:background="@drawable/bg_shape_r3_86a2b0"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:paddingLeft="@dimen/dimen_20dp"
+                android:paddingRight="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_15sp"
+                android:text="提现"/>
+
+
+            <TextView
+                android:id="@+id/tv_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4dp"
+                android:background="@drawable/bg_shape_r3_008eff"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:paddingLeft="@dimen/dimen_20dp"
+                android:paddingRight="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_15sp"
+                android:text="充值"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="持仓盈亏(元)"
+                    android:textColor="@color/color_A7A7A7"
+                    android:textSize="@dimen/dimen_14sp" />
+
+
+                <com.paizhong.manggo.widget.DinTextView
+                    android:id="@+id/tv_z_profit_loss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_1dp"
+                    android:textSize="@dimen/dimen_21sp"
+                    android:text="-----"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="可用余额(元)"
+                        android:textColor="@color/color_A7A7A7"
+                        android:textSize="@dimen/dimen_14sp" />
+
+
+                    <com.paizhong.manggo.widget.DinTextView
+                        android:id="@+id/tv_available_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_1dp"
+                        android:text="-----"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/dimen_21sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="代金券(张)"
+                        android:textColor="@color/color_A7A7A7"
+                        android:textSize="@dimen/dimen_14sp"/>
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@mipmap/user_right"
+                         android:layout_marginTop="@dimen/dimen_1dp"
+                         android:layout_marginLeft="@dimen/dimen_5dp"/>
+                </LinearLayout>
+
+
+                <com.paizhong.manggo.widget.DinTextView
+                    android:id="@+id/tv_voucher_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_1dp"
+                    android:text="---"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/dimen_21sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+        <com.paizhong.manggo.widget.tab.CommonNoViewTabLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/commonTab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_marginRight="@dimen/dimen_80dp"
+            app:tl_iconVisible="false"
+            app:tl_indicator_anim_duration="400"
+            app:tl_indicator_anim_enable="true"
+            app:tl_indicator_color="@color/color_008EFF"
+            app:tl_indicator_corner_radius="4dp"
+            app:tl_indicator_gravity="BOTTOM"
+            app:tl_indicator_height="@dimen/dimen_3dp"
+            app:tl_indicator_style="NORMAL"
+            app:tl_indicator_width="@dimen/dimen_30dp"
+            app:tl_special_select_color_blue="false"
+            app:tl_textBold="BOTH"
+            app:tl_textSelectColor="@color/color_008EFF"
+            app:tl_textUnselectColor="@color/color_333333"
+            app:tl_textsize="@dimen/dimen_16sp"
+            app:tl_underline_color="@color/color_ffffff"
+            app:tl_underline_height="@dimen/dimen_3dp" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color" />
+    <LinearLayout
+        android:id="@+id/ll_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FAFAFA"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_12dp"
+            android:text="从"
+            android:textColor="@color/color_878787"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@drawable/bg_capital_withdrawals"
+            android:paddingBottom="@dimen/dimen_3dp"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_15sp"
+            tools:text="2018-4-28" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginRight="@dimen/dimen_12dp"
+            android:text="至"
+            android:textColor="@color/color_878787"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@drawable/bg_capital_withdrawals"
+            android:paddingBottom="@dimen/dimen_3dp"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_15sp"
+            tools:text="2018-4-28" />
+    </LinearLayout>
+</LinearLayout>

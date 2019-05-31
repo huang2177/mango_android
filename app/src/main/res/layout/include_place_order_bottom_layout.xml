@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_ye_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_878787"
+            android:button="@drawable/bg_small_checkbox_select"
+            android:paddingBottom="@dimen/dimen_12dp"
+            android:paddingRight="@dimen/dimen_5dp"
+            android:paddingTop="@dimen/dimen_12dp"
+            android:textSize="@dimen/dimen_15sp"
+            android:text=" 持仓过夜" />
+
+        <TextView
+            android:id="@+id/tv_market_price_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_f7f8f9_sx_5dp"
+            android:paddingBottom="@dimen/dimen_2dp"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_2dp"
+            android:text="------------"
+            android:textSize="@dimen/dimen_12sp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:gravity="center_vertical">
+
+
+        <CheckBox
+            android:id="@+id/cb_price_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/bg_small_checkbox_select"
+            android:textColor="@color/color_878787"
+            android:paddingBottom="@dimen/dimen_12dp"
+            android:paddingRight="@dimen/dimen_5dp"
+            android:paddingTop="@dimen/dimen_12dp"
+            android:textSize="@dimen/dimen_15sp"
+            android:text=" 余额 -- 元"/>
+
+
+        <TextView
+            android:id="@+id/tv_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:text="充值"
+            android:textColor="@color/color_008EFF"
+            android:textSize="@dimen/dimen_15sp" />
+
+
+         <View
+             android:layout_width="0dp"
+             android:layout_height="@dimen/line_height"
+             android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/cb_voucher_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/bg_small_checkbox_select"
+            android:textColor="@color/color_878787"
+            android:paddingBottom="@dimen/dimen_12dp"
+            android:paddingRight="@dimen/dimen_5dp"
+            android:paddingTop="@dimen/dimen_12dp"
+            android:textSize="@dimen/dimen_15sp"
+            android:text=" 代金券 -- 张"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:background="@color/line_color" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="止盈止损"
+            android:textColor="@color/color_878787"
+            android:textSize="@dimen/dimen_15sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认止盈:200%  止损:75%"
+            android:textColor="@color/color_b2b2b2"
+            android:textSize="@dimen/dimen_12sp"
+            android:layout_marginLeft="@dimen/dimen_8dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_7dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="止损"
+            android:textColor="@color/color_A4A5A6"
+            android:textSize="@dimen/dimen_12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_zs_num"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6dp"
+            android:background="@drawable/bg_trade_zyzs"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_3dp"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:text="--"
+            android:textColor="@color/color_363030"
+            android:textSize="@dimen/dimen_15sp" />
+
+
+        <com.paizhong.manggo.widget.VibrateSeekBar
+            android:id="@+id/vs_zs_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/dimen_1dp"
+            android:background="@color/transparent"
+            android:max="15"
+            android:maxHeight="@dimen/dimen_4dp"
+            android:minHeight="@dimen/dimen_4dp"
+            android:paddingLeft="@dimen/dimen_1dp"
+            android:progressDrawable="@drawable/seek_bar_progress_green"
+            android:splitTrack="false"
+            android:thumb="@mipmap/ic_seek_bar_button"
+            android:thumbOffset="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额"
+            android:textColor="@color/color_A4A5A6"
+            android:textSize="@dimen/dimen_12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_zs_price"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6dp"
+            android:gravity="center_horizontal"
+            android:text="---元"
+            android:textColor="@color/color_363030"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_19dp"
+            android:layout_weight="1"
+            android:text="不限"
+            android:textColor="@color/color_A4A5A6"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:text="75%"
+            android:textColor="@color/color_A4A5A6"
+            android:textSize="@dimen/dimen_12sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="止盈"
+            android:textColor="@color/color_A4A5A6"
+            android:textSize="@dimen/dimen_12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_zy_num"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6dp"
+            android:background="@drawable/bg_trade_zyzs"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_3dp"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:text="--"
+            android:textColor="@color/color_363030"
+            android:textSize="@dimen/dimen_15sp" />
+
+
+        <com.paizhong.manggo.widget.VibrateSeekBar
+            android:id="@+id/vs_zy_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_1dp"
+            android:background="@color/transparent"
+            android:max="40"
+            android:maxHeight="@dimen/dimen_4dp"
+            android:minHeight="@dimen/dimen_4dp"
+            android:paddingLeft="@dimen/dimen_1dp"
+            android:progressDrawable="@drawable/seek_bar_progress_red"
+            android:splitTrack="false"
+            android:thumb="@mipmap/ic_seek_bar_button"
+            android:thumbOffset="5dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginBottom="@dimen/dimen_12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额"
+            android:textColor="@color/color_A4A5A6"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <TextView
+            android:id="@+id/tv_zy_price"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6dp"
+            android:gravity="center_horizontal"
+            android:text="---元"
+            android:textColor="@color/color_363030"
+            android:textSize="@dimen/dimen_12sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_A4A5A6"
+            android:textSize="@dimen/dimen_12sp"
+            android:layout_marginLeft="@dimen/dimen_19dp"
+            android:layout_weight="1"
+            android:text="不限"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200%"
+            android:textColor="@color/color_A4A5A6"
+            android:textSize="@dimen/dimen_12sp"
+            android:layout_marginRight="@dimen/dimen_15dp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_follow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin" />
+
+    <TextView
+        android:id="@+id/tv_follow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:drawableRight="@drawable/bg_gy_open"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:text="@string/text14"
+        android:textColor="@color/color_878787"
+        android:textSize="@dimen/dimen_15sp" />
+</LinearLayout>

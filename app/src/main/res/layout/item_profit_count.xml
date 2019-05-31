@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_follow_rank"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_18dp"
+    android:paddingTop="@dimen/dimen_10dp"
+    android:paddingRight="@dimen/dimen_18dp"
+    android:paddingBottom="@dimen/dimen_20dp">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/item_pie_chart"
+        android:layout_width="65dp"
+        android:layout_height="65dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.paizhong.manggo.widget.CircleImageView
+            android:layout_width="@dimen/dimen_7dp"
+            android:layout_height="@dimen/dimen_7dp"
+            android:src="@color/color_F74F54" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_3dp"
+            android:layout_marginRight="@dimen/dimen_3dp"
+            android:text="盈利"
+            android:textColor="@color/color_727272"
+            android:textSize="@dimen/dimen_11sp" />
+
+        <TextView
+            android:id="@+id/tv_pro_count1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_35393C"
+            android:textSize="@dimen/dimen_13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.paizhong.manggo.widget.CircleImageView
+            android:layout_width="@dimen/dimen_7dp"
+            android:layout_height="@dimen/dimen_7dp"
+            android:src="@color/color_1AC47A" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_3dp"
+            android:layout_marginRight="@dimen/dimen_3dp"
+            android:text="亏损"
+            android:textColor="@color/color_727272"
+            android:textSize="@dimen/dimen_11sp" />
+
+        <TextView
+            android:id="@+id/tv_pro_count2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_35393C"
+            android:textSize="@dimen/dimen_13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

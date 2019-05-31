@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root_view"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/transparent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_15sp"
+            tools:text="GL银"/>
+
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_float_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_15sp"
+            tools:text="1678"/>
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginRight="@dimen/app_margin"
+         android:layout_marginLeft="@dimen/app_margin"
+         android:layout_marginBottom="@dimen/dimen_6dp">
+
+         <TextView
+             android:id="@+id/tv_product_tag"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textSize="@dimen/dimen_12sp"
+             android:textColor="@color/color_b2b2b2"
+             tools:text="AG"/>
+
+
+          <com.paizhong.manggo.widget.DinTextView
+              android:id="@+id/tv_price_highest"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/dimen_12sp"
+              tools:text="-73 -1.91%"/>
+     </LinearLayout>
+</LinearLayout>

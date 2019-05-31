@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bg_signin1"
+        android:scaleType="fitXY"/>
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/ic_signin_text"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="@dimen/dimen_60dp"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginRight="@dimen/dimen_15dp"
+         android:layout_marginLeft="@dimen/dimen_15dp"
+         android:layout_marginTop="@dimen/dimen_120dp">
+
+         <include layout="@layout/include_signin_layout"/>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:background="@mipmap/bg_signin2"
+             android:gravity="center_vertical">
+
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="vertical"
+                  android:layout_marginLeft="@dimen/dimen_28dp"
+                  android:layout_marginTop="@dimen/dimen_10dp">
+
+                  <com.paizhong.manggo.widget.DinTextView
+                      android:id="@+id/tv_sign_integral"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/dimen_40sp"
+                      android:textColor="@color/color_ffffff"
+                      android:text="0"/>
+
+                  <TextView
+                      android:id="@+id/tv_sign_count"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/dimen_12sp"
+                      android:textColor="@color/color_ffffff"
+                      android:includeFontPadding="false"
+                      android:layout_marginLeft="@dimen/dimen_4dp"
+                      android:drawablePadding="@dimen/dimen_6dp"
+                      android:drawableRight="@mipmap/ic_sign"
+                      android:text="---"/>
+              </LinearLayout>
+
+              <TextView
+                  android:id="@+id/tv_sign_btn"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/color_ffffff"
+                  android:gravity="center"
+                  android:paddingTop="@dimen/dimen_7dp"
+                  android:paddingBottom="@dimen/dimen_7dp"
+                  android:paddingLeft="@dimen/dimen_9dp"
+                  android:paddingRight="@dimen/dimen_9dp"
+                  android:layout_marginRight="@dimen/dimen_20dp"
+                  android:layout_marginTop="@dimen/dimen_10dp"/>
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:background="@mipmap/bg_signin3"
+             android:paddingTop="@dimen/dimen_27dp"
+             android:layout_marginTop="-1dp"
+             android:gravity="center_vertical">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@mipmap/ic_sign_bigbox"
+                 android:layout_marginLeft="@dimen/dimen_20dp"/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/color_ffffff"
+                 android:textSize="@dimen/dimen_14sp"
+                 android:text="连续签到7天另外奖励双倍积分"/>
+         </LinearLayout>
+         
+           <View
+               android:layout_width="@dimen/line_height"
+               android:layout_height="@dimen/dimen_40dp"
+               android:background="@color/color_C8C8CC"
+               android:layout_gravity="center_horizontal"/>
+
+             <ImageView
+                 android:id="@+id/iv_close"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@mipmap/ic_close_circle"
+                 android:layout_gravity="center_horizontal"/>
+     </LinearLayout>
+
+</FrameLayout>

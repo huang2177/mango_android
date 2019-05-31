@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_product_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_bottom">
+
+    <LinearLayout
+        android:id="@+id/ll_closed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="@dimen/dimen_44dp"
+            android:layout_height="@dimen/dimen_4dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_12dp"
+            android:background="@drawable/bg_shape_r4_e6e6e6" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_placeOrderMarket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include  layout="@layout/include_place_order_hangup"/>
+
+            <include layout="@layout/include_place_order_buy_state" />
+
+            <include layout="@layout/include_place_order_sy_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="@dimen/dimen_15dp"
+                android:layout_marginLeft="@dimen/app_margin"
+                android:layout_marginRight="@dimen/app_margin"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:background="@drawable/bg_dotted_line"
+                android:layerType="software" />
+
+
+            <com.paizhong.manggo.dialog.placeorder.PlaceOrderNumLayout
+                android:id="@+id/pl_num_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include layout="@layout/include_place_order_shou_num_layout" />
+
+            </com.paizhong.manggo.dialog.placeorder.PlaceOrderNumLayout>
+
+            <include layout="@layout/include_place_order_bottom_layout"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55dp"
+        android:background="@color/color_F7F8F9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:text="总计"
+            android:textColor="@color/color_363030"
+            android:textSize="@dimen/dimen_12sp" />
+
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_price_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="@color/color_363030"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="@color/color_363030"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <TextView
+            android:id="@+id/tv_open_fee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_6dp"
+            android:layout_weight="1"
+            android:text="(含手续费--元)"
+            android:textColor="@color/color_828282"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <TextView
+            android:id="@+id/tv_place_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="买跌下单"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_20sp" />
+    </LinearLayout>
+</LinearLayout>

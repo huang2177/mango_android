@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/app_margin"
+    android:paddingTop="@dimen/dimen_15dp"
+    android:paddingRight="@dimen/app_margin">
+
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="@dimen/dimen_20dp"
+        android:layout_height="@dimen/dimen_18dp"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/bg_rank1"
+        android:gravity="center"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dimen_14sp" />
+
+    <com.paizhong.manggo.widget.CircleImageView
+        android:id="@+id/item_rank_iv"
+        android:layout_width="@dimen/dimen_34dp"
+        android:layout_height="@dimen/dimen_36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_13dp"
+        android:layout_toRightOf="@+id/tv_rank"
+        android:src="@mipmap/ic_user_head" />
+
+
+    <TextView
+        android:id="@+id/item_rank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_rank_iv"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_toRightOf="@+id/item_rank_iv"
+        android:maxLength="7"
+        android:text="盈多多盈多"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dimen_14sp" />
+
+    <TextView
+        android:id="@+id/item_rank_follow_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_7dp"
+        android:layout_toRightOf="@+id/item_rank_name"
+        android:text="8"
+        android:textColor="@color/color_FF5500"
+        android:textSize="@dimen/dimen_12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_rank_follow_num"
+        android:layout_toRightOf="@+id/item_rank_follow_num"
+        android:gravity="center"
+        android:text=" 单可跟"
+        android:textColor="@color/color_8D8D8F"
+        android:textSize="@dimen/dimen_9sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/item_rank_earnings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_rank_earnings1"
+        android:layout_alignLeft="@+id/item_rank_name"
+        android:layout_alignBottom="@+id/item_rank_iv"
+        android:gravity="center"
+        android:text="周盈利率"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/dimen_10sp" />
+
+    <TextView
+        android:id="@+id/item_rank_earnings1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_rank_iv"
+        android:layout_marginLeft="@dimen/dimen_2dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_toRightOf="@+id/item_rank_earnings"
+        android:text="86"
+        android:textColor="@color/color_FF5500"
+        android:textSize="@dimen/dimen_14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_rank_name"
+        android:layout_alignBaseline="@+id/item_rank_earnings1"
+        android:layout_toRightOf="@+id/item_rank_earnings1"
+        android:gravity="bottom"
+        android:text="%"
+        android:textColor="@color/color_FF5500"
+        android:textSize="@dimen/dimen_9sp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_rank_name"
+        android:layout_alignParentRight="true"
+        android:text="跟买盈余"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/dimen_10sp" />
+
+    <TextView
+        android:id="@+id/item_rank_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_alignBaseline="@+id/item_rank_earnings1"
+        android:layout_toLeftOf="@+id/tv2"
+        android:gravity="bottom"
+        android:text="123.56"
+        android:textColor="@color/color_FF5500"
+        android:textSize="@dimen/dimen_14sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_alignBaseline="@+id/item_rank_balance"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom"
+        android:text=" 积分"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/dimen_10sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/item_rank_iv"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:background="@color/line_color" />
+
+</RelativeLayout>

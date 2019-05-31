@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55dp"
+        android:orientation="horizontal"
+        android:background="@color/color_ffffff"
+        android:paddingBottom="@dimen/dimen_10dp">
+
+        <com.paizhong.manggo.widget.tab.MySlidingTabLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/commonTab"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_45dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            app:tl_indicator_color="@color/color_FEBC18"
+            app:tl_indicator_height="@dimen/dimen_15dp"
+            app:tl_indicator_width="@dimen/dimen_30dp"
+            app:tl_indicator_corner_radius="0dp"
+            app:tl_indicator_margin_top="@dimen/line_height"
+            app:tl_underline_color="@color/color_ffffff"
+            app:tl_underline_height="@dimen/dimen_10dp"
+            app:tl_textsize="@dimen/dimen_18sp"
+            app:tl_selctextsize="@dimen/dimen_26sp"
+            app:tl_textSelectColor="@color/color_333333"
+            app:tl_textUnselectColor="@color/color_A7A7A7"
+            app:tl_tab_sum="4"
+            app:tl_tab_zy="@dimen/dimen_100dp"
+            app:tl_textBold="BOTH"/>
+
+
+            <ImageView
+                android:id="@+id/iv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_trade_hint"
+                android:layout_marginRight="@dimen/app_margin"
+                android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+
+    <com.paizhong.manggo.widget.MyViewPager
+        android:id="@+id/vp_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

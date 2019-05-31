@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CollapsingToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/collapsing_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/bg_follow_record"
+        app:layout_collapseMode="parallax"
+        app:layout_collapseParallaxMultiplier="0.7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本周收益金额(元)"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_12sp" />
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:text="---"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_36sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="本周收益积分"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_12sp" />
+
+
+            <com.paizhong.manggo.widget.DinTextView
+                android:id="@+id/tv_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:text="---"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_36sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        app:contentInsetStart="0dp"
+        app:layout_collapseMode="pin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.paizhong.manggo.widget.DrawableCenterTextView
+                android:id="@+id/tv_left"
+                style="?attr/toolbarNavigationButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:minWidth="@dimen/title_height"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="跟买记录"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <com.paizhong.manggo.widget.tab.SlidingTabLayout
+                android:id="@+id/sliding_tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                app:tl_indicator_anim_enable="true"
+                app:tl_indicator_color="@color/color_e6e6e6"
+                app:tl_indicator_style="BLOCK"
+                app:tl_tab_padding="@dimen/dimen_10dp"
+                app:tl_textSelectColor="@color/color_333333"
+                app:tl_textUnselectColor="@color/color_B1B1B3"
+                app:tl_textsize="@dimen/dimen_14sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_gravity="bottom"
+        android:background="@color/line_color" />
+</android.support.design.widget.CollapsingToolbarLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/line_color"
+            android:layout_marginTop="49.5dp"/>
+        <HorizontalScrollView
+            android:id="@+id/hsv_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <include layout="@layout/include_product_tab_layout"/>
+        </HorizontalScrollView>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_12dp"
+        android:layout_marginRight="@dimen/dimen_12dp">
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_price_num_percentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_14sp"
+            android:textColor="@color/color_323232"
+            android:text="---  ----%"/>
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/dimen_12sp"
+             android:textColor="@color/color_b2b2b2"
+             android:text="交易时间："/>
+
+
+        <TextView
+            android:id="@+id/tv_product_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/color_727272"
+            android:text="--- ---"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"
+        android:layout_marginRight="@dimen/dimen_12dp"
+        android:layout_marginLeft="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dimen_12dp"
+        android:layout_marginRight="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_6dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今开："
+            android:textColor="@color/color_b2b2b2"
+            android:textSize="@dimen/dimen_12sp" />
+
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_price_thi_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textColor="@color/color_727272"
+            android:textSize="@dimen/dimen_14sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昨收："
+            android:textColor="@color/color_b2b2b2"
+            android:textSize="@dimen/dimen_12sp"
+            android:layout_marginLeft="@dimen/dimen_12dp"/>
+
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_price_z_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textColor="@color/color_727272"
+            android:textSize="@dimen/dimen_14sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最高："
+            android:textColor="@color/color_b2b2b2"
+            android:textSize="@dimen/dimen_12sp"
+            android:layout_marginLeft="@dimen/dimen_12dp"/>
+
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_price_highest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textColor="@color/color_727272"
+            android:textSize="@dimen/dimen_14sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最低："
+            android:textColor="@color/color_b2b2b2"
+            android:textSize="@dimen/dimen_12sp"
+            android:layout_marginLeft="@dimen/dimen_12dp"/>
+
+
+        <com.paizhong.manggo.widget.DinTextView
+            android:id="@+id/tv_price_minimum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textColor="@color/color_727272"
+            android:textSize="@dimen/dimen_14sp" />
+
+    </LinearLayout>
+</LinearLayout>

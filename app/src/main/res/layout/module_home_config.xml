@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff">
+
+    <com.paizhong.manggo.widget.tab.SlidingTabLayout
+        android:id="@+id/commonTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_7dp"
+        android:paddingLeft="@dimen/app_margin"
+        android:paddingRight="@dimen/app_margin"
+        android:paddingBottom="@dimen/dimen_4dp"
+        app:tl_indicator_anim_duration="400"
+        app:tl_indicator_anim_enable="true"
+        app:tl_indicator_color="@color/color_FEBC18"
+        app:tl_indicator_gravity="BOTTOM"
+        app:tl_indicator_height="@dimen/dimen_3dp"
+        app:tl_tab_padding="0dp"
+        app:tl_tab_sec_padding="@dimen/dimen_30dp"
+        app:tl_tab_space_equal="false"
+        app:tl_textBold="BOTH"
+        app:tl_textSelectColor="@color/color_333333"
+        app:tl_textUnselectColor="@color/color_A7A7A7"
+        app:tl_textsize="@dimen/dimen_18sp" />
+
+
+    <com.paizhong.manggo.widget.MyViewPager
+        android:id="@+id/calendar_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commonTab"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:background="@mipmap/bg_calendar1"
+        android:visibility="gone"
+        app:needReMeasure="true" />
+
+</RelativeLayout>

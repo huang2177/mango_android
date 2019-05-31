@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_bottom">
+
+    <LinearLayout
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="@dimen/dimen_44dp"
+            android:layout_height="@dimen/dimen_4dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:background="@drawable/bg_shape_r4_e6e6e6" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_shape_input"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColorHint="@color/color_A7A7A7"
+            android:textColor="@color/color_333333"
+            android:paddingTop="@dimen/dimen_9dp"
+            android:paddingBottom="@dimen/dimen_9dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:maxLines="1"
+            android:maxLength="15"
+            android:hint="交流一下呗～"/>
+
+           <TextView
+               android:id="@+id/tv_send"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/color_ffffff"
+               android:textSize="@dimen/dimen_16sp"
+               android:background="@drawable/bg_shape_r45_008eff"
+               android:paddingTop="@dimen/dimen_9dp"
+               android:paddingBottom="@dimen/dimen_9dp"
+               android:paddingRight="@dimen/dimen_22dp"
+               android:paddingLeft="@dimen/dimen_22dp"
+               android:layout_marginLeft="@dimen/dimen_15dp"
+               android:text="发送"/>
+    </LinearLayout>
+</LinearLayout>

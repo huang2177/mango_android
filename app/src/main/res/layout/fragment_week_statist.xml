@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:paddingLeft="@dimen/app_margin"
+            android:paddingRight="@dimen/app_margin">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本周跟买交易品"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/week_recycle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/week_count_pie"
+                android:layout_width="106dp"
+                android:layout_height="106dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:paddingLeft="@dimen/app_margin"
+            android:paddingRight="@dimen/app_margin"
+            android:text="本周盈利统计"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/week_recycle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:paddingLeft="@dimen/app_margin"
+            android:paddingRight="@dimen/app_margin"
+            android:text="战绩总览"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/app_margin"
+                android:text="本周盈利率"
+                android:textColor="@color/color_727272"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:id="@+id/week_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/app_margin"
+                android:paddingRight="@dimen/app_margin"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dimen_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/app_margin"
+                android:text="本周命中率"
+                android:textColor="@color/color_727272"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:id="@+id/week_hit_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/app_margin"
+                android:paddingRight="@dimen/app_margin"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dimen_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/app_margin"
+                android:text="近十场战绩"
+                android:textColor="@color/color_727272"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:id="@+id/week_nearly_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/app_margin"
+                android:paddingRight="@dimen/app_margin"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dimen_14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

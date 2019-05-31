@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.paizhong.manggo.widget.FixRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnableAutoLoadMore="false"
+    app:srlEnableLoadMore="false"
+    app:srlEnableRefresh="false">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/profit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff" />
+
+    <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</com.paizhong.manggo.widget.FixRefreshLayout>
+

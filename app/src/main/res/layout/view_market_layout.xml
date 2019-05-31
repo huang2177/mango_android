@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_15dp">
+
+        <com.paizhong.manggo.widget.RefreshView
+            android:id="@+id/tv_pro_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_3dp"
+            android:text="---"
+            android:textColor="@color/color_363030"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <com.paizhong.manggo.widget.RefreshView
+            android:id="@+id/tv_current_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:text="--"
+            android:textColor="@color/color_363030"
+            android:textSize="@dimen/dimen_23dp"
+            app:enableMedium="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp">
+
+            <com.paizhong.manggo.widget.RefreshView
+                android:id="@+id/tv_rate_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/color_363030"
+                android:textSize="@dimen/dimen_12sp"
+                app:enableMedium="true" />
+
+            <com.paizhong.manggo.widget.RefreshView
+                android:id="@+id/tv_rate_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="--"
+                android:textColor="@color/color_363030"
+                android:textSize="@dimen/dimen_12sp"
+                app:enableMedium="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:src="@mipmap/ic_hot"
+        android:visibility="gone" />
+</merge>
+

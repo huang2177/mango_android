@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_empty"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"/>
+
+     <TextView
+         android:id="@+id/tv_empty"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="@dimen/dimen_14sp"
+         android:textColor="@color/color_b2b2b2"
+         android:layout_marginTop="@dimen/dimen_17dp"
+         android:text="暂无数据"/>
+
+     <TextView
+        android:id="@+id/tv_jump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_15sp"
+        android:textColor="@color/color_ffffff"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/bg_shape_r2_008eff"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_5dp"
+        android:paddingBottom="@dimen/dimen_5dp"
+        android:text="抓行情 下一单"/>
+</LinearLayout>

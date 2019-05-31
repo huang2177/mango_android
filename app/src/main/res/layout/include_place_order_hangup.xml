@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_hangup"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/dimen_5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_878787"
+            android:textSize="@dimen/dimen_15sp"
+            android:text="挂单价"/>
+
+
+          <ImageView
+              android:id="@+id/iv_price_del"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/ic_del"
+              android:paddingLeft="@dimen/dimen_10dp"
+              android:paddingRight="@dimen/dimen_10dp"
+              android:paddingTop="@dimen/dimen_5dp"
+              android:paddingBottom="@dimen/dimen_5dp"/>
+
+          <EditText
+              android:id="@+id/et_hangup_price"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="number"
+              android:maxLength="5"
+              android:textColor="@color/color_333333"
+              android:textSize="@dimen/dimen_21sp"
+              android:background="@drawable/bg_shape_r5_f7f8f9"
+              android:paddingLeft="@dimen/dimen_15dp"
+              android:paddingRight="@dimen/dimen_15dp"
+              android:minWidth="@dimen/dimen_30dp"
+              android:hint=" "/>
+
+        <ImageView
+            android:id="@+id/iv_price_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_add"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:paddingBottom="@dimen/dimen_5dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_878787"
+            android:textSize="@dimen/dimen_15sp"
+            android:text="成交价与挂单价误差点数"/>
+
+
+        <ImageView
+            android:id="@+id/iv_num_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_del"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:paddingBottom="@dimen/dimen_5dp"/>
+
+        <EditText
+            android:id="@+id/et_hangup_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dimen_21sp"
+            android:background="@drawable/bg_shape_r5_f7f8f9"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:minWidth="@dimen/dimen_30dp"
+            android:hint=" "/>
+
+        <ImageView
+            android:id="@+id/iv_num_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_add"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:paddingBottom="@dimen/dimen_5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_12sp"
+        android:textColor="@color/color_FEBC18"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_2dp"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:text="设置较大误差可确保在价格波动大时创建成功"/>
+</LinearLayout>

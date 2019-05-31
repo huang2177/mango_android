@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_363030"
+        android:textSize="@dimen/dimen_18sp"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        tools:text="特朗普皮一下很开心？中方再次警告：希望美方不要低估中方决心"/>
+
+
+     <TextView
+         android:id="@+id/tv_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="@dimen/dimen_12sp"
+         android:textColor="@color/color_b2b2b2"
+         android:layout_marginLeft="@dimen/app_margin"
+         android:layout_marginTop="@dimen/dimen_5dp"
+         tools:text="2018-04-08 20:16"/>
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/wv_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginTop="@dimen/dimen_13dp"/>
+
+</LinearLayout>

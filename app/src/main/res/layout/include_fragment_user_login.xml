@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_151dp"
+    android:id="@+id/user_login_cl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/user_bg"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.paizhong.manggo.widget.CircleImageView
+            android:id="@+id/user_login_head"
+            android:layout_width="@dimen/dimen_64dp"
+            android:layout_height="@dimen/dimen_64dp"
+            android:layout_marginTop="@dimen/dimen_35dp"
+            android:layout_marginLeft="@dimen/dimen_23dp"
+            android:layout_marginBottom="@dimen/dimen_54dp"
+            android:src="@mipmap/user_head_default" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/user_login_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_18dp"
+                android:layout_marginTop="@dimen/dimen_39dp"
+                android:drawablePadding="@dimen/dimen_8dp"
+                android:drawableRight="@mipmap/user_right_name"
+                android:text="大牛"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_26sp"/>
+
+            <TextView
+                android:id="@+id/user_login_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_18dp"
+                android:text="13322224444"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/user_login_setting"
+        android:layout_width="@dimen/dimen_20dp"
+        android:layout_height="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/user_setting" />
+
+</RelativeLayout>

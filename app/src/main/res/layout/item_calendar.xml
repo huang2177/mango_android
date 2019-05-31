@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_12dp">
+
+    <TextView
+        android:id="@+id/tv_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_878787"
+        android:textSize="@dimen/dimen_12sp" />
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="@dimen/dimen_27dp"
+        android:layout_height="@dimen/dimen_27dp"
+        android:layout_marginTop="@dimen/dimen_3dp"
+        android:gravity="center"
+        android:textColor="@color/color_2A3342"
+        android:textSize="@dimen/dimen_14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

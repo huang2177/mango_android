@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_nologin_cl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_165dp"
+    android:background="@mipmap/user_bg"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/user_hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+                android:layout_marginTop="@dimen/dimen_33dp"
+                android:text="您好，请登录"
+                android:textStyle="bold"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_26sp"/>
+
+            <TextView
+                android:id="@+id/user_wel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+                android:text="欢迎使用芒果淘金"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_15sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_marginTop="@dimen/dimen_33dp"
+            android:layout_marginRight="@dimen/dimen_32dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/user_head_default"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/user_nologin_tv_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:paddingTop="@dimen/dimen_6dp"
+        android:paddingBottom="@dimen/dimen_6dp"
+        android:background="@drawable/bg_user_head"
+        android:text="登录/注册"
+        android:textStyle="bold"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/dimen_15sp"/>
+
+</LinearLayout>

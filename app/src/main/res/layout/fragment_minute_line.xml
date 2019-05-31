@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dimen_4dp">
+
+    <com.paizhong.manggo.ui.kchart.views.MinuteHourView
+        android:id="@+id/minute_hour_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isTouchEnabled="true"
+        app:isNewLinePrice="true"/>
+
+    <com.paizhong.manggo.ui.kchart.views.CrossView
+        android:id="@+id/cross_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>
